@@ -1,0 +1,181 @@
+footer{
+  background: #b3b3b3; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #b3b3b3 0%, #818181 86%, #757575 100%, #5c5c5c 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #b3b3b3 0%,#818181 86%,#757575 100%,#5c5c5c 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #b3b3b3 0%,#818181 86%,#757575 100%,#5c5c5c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3b3b3', endColorstr='#5c5c5c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+header{
+  background-image: url("../images/port-dinan_effet1.png");
+  background-position: center;
+  background-size: cover;
+}
+
+header h1 img{
+  max-width: 250px;
+}
+
+header nav .btn{
+  /*background-color: white;*/
+  border-radius: 0;
+  color: #000;
+}
+
+#content div>img+a>h2{
+  color: #FFF;
+  /*font-weight: bold;*/
+  position: absolute;
+  padding: 2px 2px 2px 5px;
+  bottom: 15%;
+  width: calc(100% - 45px);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#content div.accent-1>img+a>h2{
+  background-color: rgba(201, 40, 39,0.5);
+}
+#content div.accent-2>img+a>h2{
+  background-color: rgba(54, 135, 199, 0.5);
+}
+#content div.accent-3>img+a>h2{
+  background-color: rgba(245, 189, 62, 0.5);
+}
+#content div.accent-4>img+a>h2{
+  background-color: rgba(104, 162, 38, 0.5);
+}
+#content div.accent-5>img+a>h2{
+  background-color: rgba(153, 93, 146, 0.5);
+}
+
+#content .news{
+  border: 1px solid lightgrey;
+  padding: 0 10px;
+}
+
+#list_news h3{
+  margin-top: 0;
+}
+
+footer img{
+  height: 40px;
+}
+
+.breadcrumb{
+  font-size: 12px;
+}
+
+/* Utils */
+
+.vertical-align-item{ /* Mettre des commentaires <!-- --> entre les items */
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+}
+
+
+.no-gutters > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+.accent{
+
+}
+.accent::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 7.5px;
+  height: 100%;
+}
+div.accent::before{
+  width: 15px;
+  left: 15px;
+}
+div.accent{
+  padding-left: 30px;
+}
+.btn.accent:hover{
+  color: white;
+}
+
+.accent-1::before, .btn.accent-1:hover{
+  /*background-color: rgb(60, 60, 60);*/
+  background-color: #ca2827;
+}
+.accent-2::before, .btn.accent-2:hover{
+  /*background-color: rgb(80, 80, 80);*/
+  background-color: #3687c7;
+}
+.accent-3::before, .btn.accent-3:hover{
+  /*background-color: rgb(100, 100, 100);*/
+  background-color: #f5bd3e;
+}
+.accent-4::before, .btn.accent-4:hover{
+  /*background-color: rgb(120, 120, 120);*/
+  background-color: #68a226;
+}
+.accent-5::before, .btn.accent-5:hover{
+  /*background-color: rgb(140, 140, 140);*/
+  background-color: #995d92;
+}
+
+@media (max-width: 992px) { /* equivalent boostrap col-sm- et inferieurs */
+	.text-left-on-sm{ /* liste régions */
+		text-align: left !important;
+	}
+}
+
+/* Css pour Embed Google Map responsive*/
+.map_responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map_responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/* bootstrap 5 col utils */
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
