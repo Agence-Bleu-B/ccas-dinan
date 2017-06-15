@@ -6,7 +6,7 @@ class Admin extends CI_Controller {
 	{
 		$data = array();
 		$this->load->model('admin_model');
-        $isco = this->admin_model->isco();
+        $isco = $this->admin_model->isconnect();
 		$this->load->view('admin/header');
 		if ($isco) {
 			$this->load->view('admin/home',$data);
