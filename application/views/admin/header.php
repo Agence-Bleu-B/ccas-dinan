@@ -27,7 +27,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		                <span class="icon-bar"></span>
 		            </button>
 		            <a class="navbar-brand" href="#">
-		                <img src="assets/img/logo.png" />
+		                <img class="img-responsive" src="assets/images/LOGO_CCAS2.png" />
 		            </a>
 		        </div>
 		      
@@ -37,3 +37,43 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		        </span>
 		    </div>
 		</div>
+		       <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                 
+
+ <li >
+                        <a href="index.html" ><i class="fa fa-desktop "></i>Dashboard <span class="badge">Included</span></a>
+                    </li>
+                   
+
+                    <li>
+                        <a href="ui.html"><i class="fa fa-table "></i>UI Elements  <span class="badge">Included</span></a>
+                    </li>
+                    <li class="active-link">
+                        <a href="blank.html"><i class="fa fa-edit "></i>Blank Page  <span class="badge">Included</span></a>
+                    </li>
+
+
+
+                 <li>
+                        <a href="#"><i class="fa fa-qrcode "></i>My Link One</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-bar-chart-o"></i>My Link Two</a>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-edit "></i>My Link Three </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-table "></i>My Link Four</a>
+                    </li>
+                     <li>
+                        <a href="#"><i class="fa fa-edit "></i>My Link Five </a>
+                    </li>
+                </ul>
+                            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
