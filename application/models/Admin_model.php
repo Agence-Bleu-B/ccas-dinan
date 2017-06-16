@@ -13,12 +13,16 @@ class Admin_model extends CI_Model
             return false;
         }
     }
-    //connection et msie en session
+    //connection et mise en session
     public function connection($login,$mdp){
 
         if ($login == "adminccas" && $mdp == "ccas2017ADMIN") {
             $this->session->adminco = true;
         }
         
+    }
+    //deconnection et destruction session
+    public function deco(){
+        $this->session->unset_userdata('adminco');
     }
 }

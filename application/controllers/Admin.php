@@ -16,6 +16,10 @@ class Admin extends CI_Controller {
 			$log = $_POST['login'];
 			$this->admin_model->connection($log,$mdp);
 		}
+		//si demande decco
+		if (isset($_GET['deco'])) {
+			$this->admin_model->deco();
+		}
 		//verif si connecté
         $isco = $this->admin_model->isconnect();
 		//affichage page selon connection

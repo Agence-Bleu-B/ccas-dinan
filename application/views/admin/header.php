@@ -32,7 +32,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		        </div>
 		      
 		         <span class="logout-spn" >
-		          <a href="#" style="color:#fff;">LOGOUT</a>  
+		          <a href="<?php echo site_url('admin?deco'); ?>" style="color:#fff;">LOGOUT</a>  
 
 		        </span>
 		    </div>
