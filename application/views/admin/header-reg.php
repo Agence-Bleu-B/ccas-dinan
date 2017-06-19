@@ -22,7 +22,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		    <div class="adjust-nav">
 		        <div class="navbar-header">
 		            <a class="navbar-brand" href="#">
-		                <img class="img-responsive" src="assets/images/LOGO_CCAS2.png" />
+		                <img class="img-responsive" src="<?php echo img_url("LOGO_CCAS2.png"); ?>" />
 		            </a>
 		        </div>
 		    </div>

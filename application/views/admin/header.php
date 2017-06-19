@@ -27,12 +27,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		                <span class="icon-bar"></span>
 		            </button>
 		            <a class="navbar-brand" href="#">
-		                <img class="img-responsive" src="assets/images/LOGO_CCAS2.png" />
+		                <img class="img-responsive" src="<?php echo img_url("LOGO_CCAS2.png"); ?>" />
 		            </a>
 		        </div>
-		      
+
 		         <span class="logout-spn" >
-		          <a href="<?php echo site_url('admin?deco'); ?>" style="color:#fff;">LOGOUT</a>  
+		          <a href="<?php echo site_url('admin?deco'); ?>" style="color:#fff;">LOGOUT</a>
 
 		        </span>
 		    </div>
@@ -40,12 +40,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		       <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
-                 
+
 
  <li >
                         <a href="index.html" ><i class="fa fa-desktop "></i>Dashboard <span class="badge">Included</span></a>
                     </li>
-                   
+
 
                     <li>
                         <a href="ui.html"><i class="fa fa-table "></i>UI Elements  <span class="badge">Included</span></a>

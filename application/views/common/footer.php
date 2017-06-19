@@ -10,7 +10,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <li><a href="#">Mention Legales</a></li>
         <li><a href="#">Contact</a></li>
         <li>© Bleu-B 2017</li>
-        <li><a href="#"><img src="BLEUB.jpg"></a></li>
       </ul>
     </div>
   </footer>
