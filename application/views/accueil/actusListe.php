@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
   <!-- MIETTES DE PAIN -->
   <ol class="breadcrumb row">
-    <li><a href="#">Accueil</a></li>
+    <li><a href="<?php echo site_url(); ?>">Accueil</a></li>
     <li class="active">En ce moment...</li>
   </ol>
 

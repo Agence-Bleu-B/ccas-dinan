@@ -27,31 +27,41 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </div>
     </div>
     <div class="col-xs-6 col-md-4 col-md-pull-4 accent accent-1">
-      <img class="img-responsive" src="<?php echo img_url("fotolia_110916723.jpg"); ?>" alt="">
-      <a href="#"><h2>Action Sociale</h2></a>
+      <a href="<?php echo site_url('services/action_sociales'); ?>">
+        <img class="img-responsive" src="<?php echo img_url("fotolia_110916723.jpg"); ?>" alt="">
+        <h2>Action Sociale</h2>
+      </a>
     </div>
     <div class="col-xs-6 col-md-4 col-md-pull-4 accent accent-2">
-      <img class="img-responsive" src="<?php echo img_url("fotolia_145906629.jpg"); ?>" alt="">
-      <a href="#"><h2>Aide à Domicile</h2></a>
+      <a href="<?php echo site_url('services/aides_a_domicile'); ?>">
+        <img class="img-responsive" src="<?php echo img_url("fotolia_145906629.jpg"); ?>" alt="">
+        <h2>Aide à Domicile</h2>
+      </a>
     </div>
 
     <div class="clearfix"></div>
     <br>
 
     <div class="col-xs-6 col-md-4 accent accent-3">
-      <img class="img-responsive" src="<?php echo img_url("fotolia_101840258.jpg"); ?>" alt="">
-      <a href="#"><h2>EHPAD</h2></a>
+      <a href="<?php echo site_url('services/ehpad'); ?>">
+        <img class="img-responsive" src="<?php echo img_url("fotolia_101840258.jpg"); ?>" alt="">
+        <h2>EHPAD</h2>
+      </a>
     </div>
     <div class="col-xs-6 col-md-4 accent accent-4">
-      <img class="img-responsive" src="<?php echo img_url("fotolia_65076151-2.jpg"); ?>" alt="">
-      <a href="#"><h2>Hebergement <br>D'Urgence</h2></a>
+      <a href="<?php echo site_url('services/hebergement_durgence'); ?>">
+        <img class="img-responsive" src="<?php echo img_url("fotolia_65076151-2.jpg"); ?>" alt="">
+        <h2>Hebergement <br>D'Urgence</h2>
+      </a>
     </div>
     <div class="col-xs-12 hidden-md hidden-lg">
       <br>
     </div>
     <div class="col-xs-6 col-md-4 accent accent-5">
-      <img class="img-responsive" src="<?php echo img_url("fotolia_150161025.jpg"); ?>" alt="">
-      <a href="#"><h2>Portage de Repas</h2></a>
+      <a href="<?php echo site_url('services/portage_de_repas'); ?>">
+        <img class="img-responsive" src="<?php echo img_url("fotolia_150161025.jpg"); ?>" alt="">
+        <h2>Portage de Repas</h2>
+      </a>
     </div>
   </section>
 

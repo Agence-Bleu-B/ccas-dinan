@@ -22,7 +22,7 @@ header nav .btn{
   color: #000;
 }
 
-#content div>img+a>h2{
+#content div>a>img+h2{
   color: #FFF;
   /*font-weight: bold;*/
   position: absolute;
@@ -32,19 +32,19 @@ header nav .btn{
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-#content div.accent-1>img+a>h2{
+#content div.accent-1>a>img+h2{
   background-color: rgba(201, 40, 39,0.5);
 }
-#content div.accent-2>img+a>h2{
+#content div.accent-2>a>img+h2{
   background-color: rgba(54, 135, 199, 0.5);
 }
-#content div.accent-3>img+a>h2{
+#content div.accent-3>a>img+h2{
   background-color: rgba(245, 189, 62, 0.5);
 }
-#content div.accent-4>img+a>h2{
+#content div.accent-4>a>img+h2{
   background-color: rgba(104, 162, 38, 0.5);
 }
-#content div.accent-5>img+a>h2{
+#content div.accent-5>a>img+h2{
   background-color: rgba(153, 93, 146, 0.5);
 }
 
