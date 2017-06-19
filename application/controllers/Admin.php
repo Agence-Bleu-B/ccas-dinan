@@ -45,6 +45,17 @@ class Admin extends CI_Controller {
 		$this->load->model('admin_model');
 		//verif si connecté
 	    $isco = $this->admin_model->isconnect();
+	    //pagination
+        $this->load->library('pagination');
+
+        $config['base_url'] = site_url('admin/actu');
+        $config['total_rows'] = 200;
+        $config['per_page'] = 10;
+        $config['page_query_string'] = TRUE;
+        $config['reuse_query_string'] = TRUE;
+
+        $this->pagination->initialize($config);
+        $data2['pagination'] = $this->pagination->create_links();
 		//affichage page selon connection
 		if ($isco) {
 			$this->load->view('admin/header');

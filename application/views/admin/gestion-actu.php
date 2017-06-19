@@ -19,7 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <thead>
                     <tr>
                       <th colspan="5">
-                        Listes des actualités
+                        Liste des actualités
                       </th>
                       <th>
                         <a href="#" class="btn btn-success" style="width: 100%;">
@@ -28,19 +28,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                       </th>
                     </tr>
                     <tr>
-                      <th>
+                      <th style="width: 2%;">
                         #id
                       </th>
-                      <th>
+                      <th style="width: 40%;">
                         Titre
                       </th>
-                      <th>
+                      <th style="width: 8%;">
                         Date
                       </th>
-                      <th>
+                      <th style="width: 20%;">
                         Image
                       </th>
-                      <th>
+                      <th style="width: 20%;">
                         Cible
                       </th>
                       <th style="width: 10%;">
@@ -76,6 +76,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </tr>
                   </tbody>
                 </table>
+                <?php echo $pagination; ?>
               </div>
             </div>
           </div>
