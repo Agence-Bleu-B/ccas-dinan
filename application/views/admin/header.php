@@ -41,7 +41,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
  					<li class="active-link" >
-                        <a href="index.html" ><i class="fa fa-desktop "></i>Accueil</a>
+                        <a href="<?php echo site_url('admin'); ?>" ><i class="fa fa-desktop "></i>Accueil</a>
                     </li>
                     <li>
                         <a href="<?php echo site_url('admin/actu'); ?>"><i class="fa fa-newspaper-o "></i>Actualités</a>
