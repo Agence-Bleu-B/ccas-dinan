@@ -12,7 +12,73 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       	<hr />
       	<!-- contenu a partir d'ici -->
       	<div class="row text-center pad-top">
-      		
+          <div class="container-fluid">
+        		<div class="row">
+              <div class="col-md-12">
+                <table class="table table-bordered table-hover">
+                  <thead>
+                    <tr>
+                      <th colspan="5">
+                        Listes des actualités
+                      </th>
+                      <th>
+                        <a href="#" class="btn btn-success" style="width: 100%;">
+                          <span class="glyphicon glyphicon-plus"></span> Nouveau 
+                        </a> 
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>
+                        #id
+                      </th>
+                      <th>
+                        Titre
+                      </th>
+                      <th>
+                        Date
+                      </th>
+                      <th>
+                        Image
+                      </th>
+                      <th>
+                        Cible
+                      </th>
+                      <th style="width: 10%;">
+                        Commandes
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        1
+                      </td>
+                      <td>
+                        TB - Monthly
+                      </td>
+                      <td>
+                        01/04/2012
+                      </td>
+                      <td>
+                        Default
+                      </td>
+                      <td>
+                        Default
+                      </td>
+                      <td>
+                        <a href="#" class="btn btn-primary" style="width: 100%; margin-bottom: 5px;">
+                          <span class="glyphicon glyphicon-pencil"></span> Modifier 
+                        </a>
+                        <a href="#" class="btn btn-danger" style="width: 100%;">
+                          <span class="glyphicon glyphicon-remove-circle"></span> Supprimer 
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
       	</div>
       	<!-- /. contenu  -->
          <!-- /. ROW  -->           
