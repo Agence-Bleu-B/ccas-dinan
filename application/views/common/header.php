@@ -12,7 +12,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </a>
     </h1><!--
 --><div class="col-xs-4 vertical-align-item">
-      <a href="<?php echo site_url('admin'); ?>" class="btn btn-default btn-lg pull-right"><i class="fa fa-users" aria-hidden="true"></i> Personnel</a>
+       <?php if (isset($isPersonnelCo) and $isPersonnelCo): ?>
+         <a href="<?php echo site_url('personnel?deco'); ?>" class="btn btn-default btn-lg pull-right"><i class="fa fa-sign-out" aria-hidden="true"></i> Se Déconnecter</a>
+       <?php else: ?>
+         <a href="<?php echo site_url('personnel'); ?>" class="btn btn-default btn-lg pull-right"><i class="fa fa-users" aria-hidden="true"></i> Personnel</a>
+       <?php endif; ?>
     </div>
   </div>
 
