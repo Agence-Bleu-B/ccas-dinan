@@ -5,17 +5,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div id="page-inner">
         <div class="row">
             <div class="col-md-12">
-             <h2>Accès administration</h2>   
+             <h2>Accès administration</h2>
             </div>
-        </div> 
-        <hr>             
+        </div>
+        <hr>
          <!-- /. ROW  -->
-      	<form class="form-horizontal" method="post" action="<?php echo base_url('admin'); ?>">
+      	<form class="form-horizontal" method="post" action="<?php echo site_url('admin'); ?>">
 			<fieldset>
 				<!-- Text input-->
-				<div class="form-group">  
+				<div class="form-group">
 				  <div class="col-md-4">
-				  <input id="textinput" name="login" placeholder="login" class="form-control input-md" type="text"> 
+				  <input id="textinput" name="login" placeholder="login" class="form-control input-md" type="text">
 				  </div>
 				</div>
 				<!-- Password input-->
@@ -32,7 +32,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 			</fieldset>
 			</form>
-         <!-- /. ROW  -->           
+         <!-- /. ROW  -->
 		</div>
      <!-- /. PAGE INNER  -->
     </div>

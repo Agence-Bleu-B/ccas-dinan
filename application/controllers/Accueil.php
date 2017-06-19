@@ -11,4 +11,14 @@ class Accueil extends CI_Controller {
     $this->load->view('accueil/home',$data);
     $this->load->view('common/footer');
 	}
+
+	public function actualites()
+	{
+		$data = array();
+
+		$this->load->view('common/head');
+		$this->load->view('common/header');
+    $this->load->view('accueil/newsList',$data);
+    $this->load->view('common/footer');
+	}
 }

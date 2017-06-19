@@ -4,11 +4,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!-- BLOCK CONTENT -->
 <section id="content" class="container">
 
-
   <!-- SLIDER -->
-  <div class="row">
-    <img class="img-responsive" src="http://placehold.it/1170x500" alt="">
-  </div>
+  <?php $this->load->view('common/sliderMenu'); ?>
 
   <!-- MIETTES DE PAIN -->
   <ol class="breadcrumb row">

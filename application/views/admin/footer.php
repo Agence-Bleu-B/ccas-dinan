@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	crossorigin="anonymous">
 </script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="<?php echo base_url().'assets/js/admin.js'?>"></script>
+<script type="text/javascript" src="<?php echo js_url('admin');?>"></script>
 
 </script>
 </body>
