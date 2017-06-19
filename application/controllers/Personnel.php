@@ -22,11 +22,11 @@ class Personnel extends CI_Controller {
 		}
 		//verif si connecté
         $isco = $this->personnel_model->isconnect();
-				$data2['isPersonnelCo'] = $isco;
+				$data['isPersonnelCo'] = $isco;
 
 		//affichage page selon connection
 		$this->load->view('common/head');
-		$this->load->view('common/header');
+		$this->load->view('common/header', $data);
 		if ($isco) {
 			$this->load->view('personnel/home',$data2);
 		}

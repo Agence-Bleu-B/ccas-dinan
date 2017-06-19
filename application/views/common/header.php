@@ -13,9 +13,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </h1><!--
 --><div class="col-xs-4 vertical-align-item">
        <?php if (isset($isPersonnelCo) and $isPersonnelCo): ?>
-         <a href="<?php echo site_url('personnel?deco'); ?>" class="btn btn-default btn-lg pull-right"><i class="fa fa-sign-out" aria-hidden="true"></i> Se Déconnecter</a>
+         <a href="<?php echo site_url('personnel?deco'); ?>" class="btn btn-default btn pull-right"><i class="fa fa-sign-out" aria-hidden="true"></i> Se Déconnecter</a>
+
+         <a href="<?php echo site_url('personnel'); ?>" class="btn btn-default btn pull-right"><i class="fa fa-user" aria-hidden="true"></i> Mon Espace</a>
        <?php else: ?>
-         <a href="<?php echo site_url('personnel'); ?>" class="btn btn-default btn-lg pull-right"><i class="fa fa-users" aria-hidden="true"></i> Personnel</a>
+         <a href="<?php echo site_url('personnel'); ?>" class="btn btn-default btn-lg pull-right"><i class="fa fa-users" aria-hidden="true"></i> Accès Personnel</a>
        <?php endif; ?>
     </div>
   </div>
