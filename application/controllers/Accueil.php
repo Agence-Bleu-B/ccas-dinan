@@ -32,7 +32,7 @@ class Accueil extends CI_Controller {
     $this->load->view('common/footer');
 	}
 
-	public function actualite($id)
+	public function actualite()
 	{
 		$data = array();
 		$data2 = array();
