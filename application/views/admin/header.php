@@ -32,7 +32,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		        </div>
 		      
 		         <span class="logout-spn" >
-		          <a href="<?php echo site_url('admin?deco'); ?>" style="color:#fff;">LOGOUT</a>  
+		          <a href="<?php echo site_url('admin?deco'); ?>" style="color:#fff;">Se déconnecter</a>  
 
 		        </span>
 		    </div>
@@ -40,13 +40,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		       <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
-                 
-
  					<li class="active-link" >
                         <a href="index.html" ><i class="fa fa-desktop "></i>Accueil</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-newspaper-o "></i>Actualités</a>
+                        <a href="<?php echo site_url('admin/actu'); ?>"><i class="fa fa-newspaper-o "></i>Actualités</a>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-users "></i>Personel CCAS</a>
@@ -54,8 +52,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <li>
                         <a href="#"><i class="fa fa-bar-chart-o"></i>Statistiques</a>
                     </li>
-
                     <li>
+                        <a href="#"><i class="fa fa-edit"></i>Pages</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-book"></i>Documents</a>
+                    </li>
                 </ul>
                             </div>
 

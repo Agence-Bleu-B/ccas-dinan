@@ -2,6 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Admin extends CI_Controller {
+	
 	public function index()
 	{
 		//data head
@@ -20,8 +21,9 @@ class Admin extends CI_Controller {
 		if (isset($_GET['deco'])) {
 			$this->admin_model->deco();
 		}
+		
 		//verif si connecté
-        $isco = $this->admin_model->isconnect();
+	    $isco = $this->admin_model->isconnect();
 		//affichage page selon connection
 		if ($isco) {
 			$this->load->view('admin/header');
@@ -32,5 +34,26 @@ class Admin extends CI_Controller {
 			$this->load->view('admin/register',$data2);
 		}
         $this->load->view('admin/footer');
+	}
+	public function actu()
+	{
+		//data head
+		$data = array();
+		//data corp
+		$data2 = array();
+		//chargement models
+		$this->load->model('admin_model');
+		//verif si connecté
+	    $isco = $this->admin_model->isconnect();
+		//affichage page selon connection
+		if ($isco) {
+			$this->load->view('admin/header');
+			$this->load->view('admin/gestion-actu',$data2);
+		}
+		else{
+			$this->load->view('admin/header-reg');
+			$this->load->view('admin/register',$data2);
+		}
+		$this->load->view('admin/footer');
 	}
 }
