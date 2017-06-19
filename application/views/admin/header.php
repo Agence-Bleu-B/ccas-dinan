@@ -47,7 +47,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <a href="<?php echo site_url('admin/actu'); ?>"><i class="fa fa-newspaper-o "></i>Actualités</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-users "></i>Personel CCAS</a>
+                        <a href="#"><i class="fa fa-users "></i>Personnel CCAS</a>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-bar-chart-o"></i>Statistiques</a>

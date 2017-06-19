@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           		<div class="div-square">
 	               	<a href="blank.html" >
 						<i class="fa fa-users fa-5x"></i>
-	          			<h4>Personel CCAS</h4>
+	          			<h4>Personnel CCAS</h4>
 	          		</a>
           		</div>
           	</div>
