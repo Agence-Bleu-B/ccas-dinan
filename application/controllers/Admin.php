@@ -46,6 +46,14 @@ class Admin extends CI_Controller {
 		$this->load->model('news_model');
 		//verif si connecté
 	    $isco = $this->admin_model->isconnect();
+	    if (!$isco) {
+	    	redirect('/admin', 'refresh');
+	    }
+	    // si demande d'effacement de news
+	    if (isset($_GET['delete'])) {
+	    	$idtodel = $_GET['delete'];
+	    	$this->news_model->delete_news($idtodel);
+	    }
 	    //pagination
         $this->load->library('pagination');
         //config pagination
@@ -69,14 +77,8 @@ class Admin extends CI_Controller {
         $newslist = $this->news_model->get_list(0,$limit);
         $data2['newslist'] = $newslist; 
 		//affichage page selon connection
-		if ($isco) {
-			$this->load->view('admin/header');
-			$this->load->view('admin/gestion-actu',$data2);
-		}
-		else{
-			$this->load->view('admin/header-reg');
-			$this->load->view('admin/register',$data2);
-		}
+		$this->load->view('admin/header');
+		$this->load->view('admin/gestion-actu',$data2);
 		$this->load->view('admin/footer');
 	}
 }

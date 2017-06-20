@@ -70,7 +70,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <a href="#" class="btn btn-primary" style="width: 100%; margin-bottom: 5px;">
                           <span class="glyphicon glyphicon-pencil"></span> Modifier 
                         </a>
-                        <a href="#" class="btn btn-danger" style="width: 100%;">
+                        <a href="<?php echo site_url('admin/actu?delete=').$value['id']; ?>" class="btn btn-danger" style="width: 100%;">
                           <span class="glyphicon glyphicon-remove-circle"></span> Supprimer 
                         </a>
                       </td>

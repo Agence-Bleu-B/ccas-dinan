@@ -1,15 +1,35 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 class News_model extends CI_Model
 {
+    /********************************************/
+    /****** création d'une news         *********/
+    /********************************************/
     public function new_news(){
 
     }
-    public function delete_news(){
-
+    /********************************************/
+    /****** effacement d'une news       *********/
+    /********************************************/
+    public function delete_news($id){
+        $this->db->where('id', $id);
+        $this->db->delete('news');
+        //verification si fichier
+        $name = 'news/'.$id ;
+        $path = file_url($name);
+        $fichier = read_file($path);
+        if ($fichier) {
+            delete_files($fichier);
+        }
     }
+    /********************************************/
+    /****** modification d'une news     *********/
+    /********************************************/
     public function modif_news(){
         # code...
     }
+    /********************************************/
+    /****** chargement d'une news (detail) ******/
+    /********************************************/
     public function load_news(){
 
     }
@@ -17,6 +37,8 @@ class News_model extends CI_Model
     /****** recuperation liste des news *********/
     /********************************************/
     public function get_list($cible,$page){
+        //init return
+        $return = array();
         //calcul offset bdd
         if ($page != null) {
             $limit = $page;
