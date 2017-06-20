@@ -52,7 +52,8 @@ class Admin extends CI_Controller {
 	    // si demande d'effacement de news
 	    if (isset($_GET['delete'])) {
 	    	$idtodel = $_GET['delete'];
-	    	$this->news_model->delete_news($idtodel);
+	    	$message = $this->news_model->delete_news($idtodel);
+	    	$data2['message'] = $message;
 	    }
 	    //pagination
         $this->load->library('pagination');
@@ -79,6 +80,27 @@ class Admin extends CI_Controller {
 		//affichage page selon connection
 		$this->load->view('admin/header');
 		$this->load->view('admin/gestion-actu',$data2);
+		$this->load->view('admin/footer');
+	}
+	public function creation(){
+		//data head
+		$data = array();
+		//data corp
+		$data2 = array();
+		//chargement models
+		$this->load->model('admin_model');
+		$this->load->model('news_model');
+		//verif si connecté
+	    $isco = $this->admin_model->isconnect();
+	    if (!$isco) {
+	    	redirect('/admin', 'refresh');
+	    }
+
+
+
+	    //affichage page selon connection
+		$this->load->view('admin/header');
+		$this->load->view('admin/creation',$data2);
 		$this->load->view('admin/footer');
 	}
 }

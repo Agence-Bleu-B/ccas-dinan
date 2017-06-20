@@ -4,20 +4,25 @@ class News_model extends CI_Model
     /********************************************/
     /****** création d'une news         *********/
     /********************************************/
-    public function new_news(){
+    public function new_news($post){
 
     }
     /********************************************/
     /****** effacement d'une news       *********/
     /********************************************/
     public function delete_news($id){
+        //delete from news
         $this->db->where('id', $id);
         $this->db->delete('news');
+        //delete from news_file
+        $this->db->where('id_news', $id);
+        $this->db->delete('news_file');
         //verification si fichier
         $name = 'news/'.$id ;
         $path = file_url($name);
         delete_files($path);
         rmdir($path);
+        return "l'actualité à été supprimée" ;
     }
     /********************************************/
     /****** modification d'une news     *********/

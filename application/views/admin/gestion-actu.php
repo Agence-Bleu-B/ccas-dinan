@@ -13,6 +13,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       	<!-- contenu a partir d'ici -->
       	<div class="row text-center pad-top">
           <div class="container-fluid">
+          <?php if (isset($message)) { ?>
+            <div class="row">
+            <div class="col-lg-12 ">
+                <div class="alert alert-info">
+                     <?php echo $message ; ?>
+                </div>
+            </div>
+          </div> <?php
+          } ?>
         		<div class="row">
               <div class="col-md-12">
                 <table class="table table-bordered table-hover">
@@ -22,7 +31,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         Liste des actualités
                       </th>
                       <th>
-                        <a href="#" class="btn btn-success" style="width: 100%;">
+                        <a href="<?php echo site_url('admin/creation'); ?>" class="btn btn-success" style="width: 100%;">
                           <span class="glyphicon glyphicon-plus"></span> Nouveau 
                         </a> 
                       </th>
