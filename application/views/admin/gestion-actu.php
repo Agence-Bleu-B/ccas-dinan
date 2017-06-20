@@ -49,21 +49,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </tr>
                   </thead>
                   <tbody>
+                  <?php foreach ($newslist as $key => $value) { ?>
                     <tr>
                       <td>
-                        1
+                        <?php echo $value['id'] ; ?>
                       </td>
                       <td>
-                        TB - Monthly
+                        <?php echo $value['titre'] ; ?>
                       </td>
                       <td>
-                        01/04/2012
+                        <?php echo $value['date'] ; ?>
                       </td>
                       <td>
-                        Default
+                        <img src="<?php echo img_url($value['couverture']); ?>" class="img_responsive" style="max-height: 60px;" > 
                       </td>
                       <td>
-                        Default
+                        <?php echo $value['cible'] ; ?>
                       </td>
                       <td>
                         <a href="#" class="btn btn-primary" style="width: 100%; margin-bottom: 5px;">
@@ -74,9 +75,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </a>
                       </td>
                     </tr>
+                    <?php } ?>
                   </tbody>
                 </table>
-                <?php echo $pagination; ?>
+                <?php echo $pagination;?>
               </div>
             </div>
           </div>

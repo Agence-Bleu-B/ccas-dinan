@@ -59,7 +59,15 @@ class Admin extends CI_Controller {
         $data2['pagination'] = $this->pagination->create_links();
 
         //requete news
+        if (isset($_GET['per_page'])) {
+        	$limit = $_GET['per_page'];
+        }
+        else{
+        	$limit = 0;
+        }
         
+        $newslist = $this->news_model->get_list(0,$limit);
+        $data2['newslist'] = $newslist; 
 		//affichage page selon connection
 		if ($isco) {
 			$this->load->view('admin/header');
