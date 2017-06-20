@@ -16,10 +16,8 @@ class News_model extends CI_Model
         //verification si fichier
         $name = 'news/'.$id ;
         $path = file_url($name);
-        $fichier = read_file($path);
-        if ($fichier) {
-            delete_files($fichier);
-        }
+        delete_files($path);
+        rmdir($path);
     }
     /********************************************/
     /****** modification d'une news     *********/
