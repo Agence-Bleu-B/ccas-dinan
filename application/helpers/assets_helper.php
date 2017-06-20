@@ -31,3 +31,11 @@ if ( ! function_exists('img'))
 		return '<img src="' . img_url($nom) . '" alt="' . $alt . '" />';
 	}
 }
+// ajout perso, recherche de fichiers
+if ( ! function_exists('file_url'))
+{
+	function file_url($nom)
+	{
+		return base_url() . 'assets/images/' . $nom;
+	}
+}
