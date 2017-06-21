@@ -40,10 +40,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		       <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
- 					<li class="active-link" >
+ 					<li <?php if ($pagecours == 'index') {echo 'class="active-link"';}?>>
                         <a href="<?php echo site_url('admin'); ?>" ><i class="fa fa-desktop "></i>Accueil</a>
                     </li>
-                    <li>
+                    <li <?php if ($pagecours == 'actu' || $pagecours == 'creation' ) {echo 'class="active-link"';}?>>
                         <a href="<?php echo site_url('admin/actu'); ?>"><i class="fa fa-newspaper-o "></i>Actualités</a>
                     </li>
                     <li>

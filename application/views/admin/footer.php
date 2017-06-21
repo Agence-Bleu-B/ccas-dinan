@@ -1,12 +1,12 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') OR exit('No direct script access allowed'); 
 ?>
 <!-- /. PAGE WRAPPER  -->
         </div>
 <footer>
 	<div class="row">
         <div class="col-lg-12" >
-            &copy;  2017 ccas-dinan.com | Design by: <a href="#"  target="_blank">www.bleu-b.com</a>
+            &copy;  2017 ccas-dinan.com | Design by: <a href="#"  target="_blank">www.bleu-b.com</a> 
         </div>
     </div>
 </footer>
@@ -18,13 +18,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?php echo js_url('admin');?>"></script>
-<script type="text/javascript" src="<?php echo js_url('tinymce/tinymce.min');?>"></script>
-<script>
-  tinymce.init({
-    selector: 'textarea',
-    height: 600,
-    language: 'fr_FR'
-  });
-  </script>
+<?php if ($pagecours == "creation") {?>
+	<script type="text/javascript" src="<?php echo js_url('tinymce/tinymce.min');?>"></script>
+	<script>
+	  tinymce.init({
+	    selector: 'textarea',
+	    height: 600,
+	    language: 'fr_FR',
+	    images_upload_base_path: '/some/basepath',
+	    branding: false,
+	    menubar: false,
+	    toolbar: 'undo redo | styleselect | bold italic | link image'
+	  });
+	</script>
+<?php } ?>
 </body>
 </html>
