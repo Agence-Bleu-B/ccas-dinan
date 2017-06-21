@@ -18,7 +18,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?php echo js_url('admin');?>"></script>
-
-</script>
+<script type="text/javascript" src="<?php echo js_url('tinymce/tinymce.min');?>"></script>
+<script>
+  tinymce.init({
+    selector: 'textarea',
+    height: 600,
+    language: 'fr_FR'
+  });
+  </script>
 </body>
 </html>

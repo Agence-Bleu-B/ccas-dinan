@@ -100,7 +100,7 @@ class Admin extends CI_Controller {
 
 	    //affichage page selon connection
 		$this->load->view('admin/header');
-		$this->load->view('admin/creation',$data2);
+		$this->load->view('admin/new',$data2);
 		$this->load->view('admin/footer');
 	}
 }
