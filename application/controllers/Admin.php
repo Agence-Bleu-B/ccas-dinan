@@ -86,13 +86,18 @@ class Admin extends CI_Controller {
 	public function creation(){
 		//chargement models
 		$this->load->model('news_model');
+		$this->load->helper('directory');
 		//verif si connecté
 	    if (!$this->isco) {
 	    	redirect('/admin', 'refresh');
 	    }
 
-
-
+	    if (isset($_POST['create'])) {
+	    	$this->data2['create'] = $_POST;
+	    	$this->data2['text'] = $_POST['text'];
+	    }
+	    //recuperation medias
+	    $this->data['medias'] = $map = directory_map('./assets/images/medias');
 	    //affichage page selon connection
 		$this->load->view('admin/header',$this->data);
 		$this->load->view('admin/new',$this->data2);

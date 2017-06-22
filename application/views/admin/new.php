@@ -14,6 +14,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       	<div class="row text-center pad-top">
       		<form class="form-horizontal" method="post" action="">
             <fieldset>
+            <!-- Titre -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="titre">Titre</label>
+              <div class="col-md-4">
+                  <input name="titre" id="titre" type="text"> 
+              </div>
+            </div>
+            <!-- couverture -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="couv">couverture</label>
+              <div class="col-md-4">
+                  <input name="couv" id="couv" type="text"> 
+              </div>
+            </div>
             <!-- Multiple Radios (inline) -->
             <div class="form-group">
               <label class="col-md-4 control-label" for="radios">Cible</label>
@@ -31,20 +45,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <!-- Textarea -->
             <div class="form-group">
               <div class="col-md-offset-1 col-md-10">                     
-                <textarea class="form-control" id="textarea" name="text"></textarea>
+                <textarea class="form-control" id="textarea" name="text"><?php if (isset($text)){echo $text;}?></textarea>
               </div>
             </div>
 
             <!-- Button (Double) -->
             <div class="form-group">
               <div class="col-md-offset-1 col-md-10">
-                <button id="button1id" name="button1id" class="btn btn-success">Créer</button>
-                <button id="button2id" name="button2id" class="btn btn-danger">Abandonner</button>
+                <button id="button1id" name="create" class="btn btn-success">Créer</button>
+                <button id="button2id" name="abandon" class="btn btn-danger">Abandonner</button>
               </div>
             </div>
 
             </fieldset>
-            </form>
+            </form><?php var_dump($create) ;echo $text; ?>
       	</div>
       	<!-- /. contenu  -->
          <!-- /. ROW  -->           

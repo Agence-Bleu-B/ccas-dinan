@@ -24,11 +24,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	  tinymce.init({
 	    selector: 'textarea',
 	    height: 600,
-	    language: 'fr_FR',
-	    images_upload_base_path: '/some/basepath',
+	    language: 'fr_FR',plugins: "paste",
 	    branding: false,
 	    menubar: false,
-	    toolbar: 'undo redo | styleselect | bold italic | link image'
+	    toolbar: 'undo redo | styleselect | bold italic | link image',
+	    paste_data_images: true
 	  });
 	</script>
 <?php } ?>

@@ -59,7 +59,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <a href="#"><i class="fa fa-book"></i>Documents</a>
                     </li>
                 </ul>
-                            </div>
-
+            </div>
+            <?php if ($pagecours == 'creation' ){ ?>
+			<div class="sidemedia">
+				<p>Medias</p>
+				<div class="sidemediabloc">
+					<?php foreach ($medias as $key => $value) { ?><img class="img-responsive" src="<?php echo img_url('medias/'.$value) ;?>">
+						
+					<?php } ?>
+				</div>
+			</div>
+			<?php } ?>
         </nav>
         <!-- /. NAV SIDE  -->
