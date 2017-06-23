@@ -8,8 +8,23 @@ class News_model extends CI_Model
         foreach ($post as $key => $value){
             $array[$key] = $value;
         }
-        //elements/newsbanner.png
-        return false;
+        //verifications
+        if (!isset($array['titre'])) {
+            $array['titre'] = 'actualité du '.now();
+        }
+        if (!isset($array['couv'])) {
+            $array['couv'] = 'elements/newsbanner.png';
+        }
+        else{
+            //decoupage couverture
+            $exp = explode('images/', $array['couv']);
+            $array['couv'] = $exp[1];
+        }
+        if (!isset($array['text'])) {
+            $array['text'] = ' ';
+        }
+        return $str = $this->db->insert_string('news', $array);
+        
     }
     /********************************************/
     /****** effacement d'une news       *********/
