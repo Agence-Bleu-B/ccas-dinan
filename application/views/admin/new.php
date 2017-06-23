@@ -12,20 +12,30 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       	<hr />
       	<!-- contenu a partir d'ici -->
       	<div class="row text-center pad-top">
+        <div class="container-fluid">
+          <?php if (isset($message)) { ?>
+            <div class="row">
+            <div class="col-lg-12 ">
+                <div class="alert alert-danger">
+                     <?php echo $message ; ?>
+                </div>
+            </div>
+          </div> <?php
+          } ?>
       		<form class="form-horizontal" method="post" action="">
             <fieldset>
             <!-- Titre -->
             <div class="form-group">
               <label class="col-md-4 control-label" for="titre">Titre</label>
               <div class="col-md-4">
-                  <input name="titre" id="titre" type="text"> 
+                  <input name="titre" id="titre" type="text" value="<?php if (isset($titre)){echo $titre;}?>"> 
               </div>
             </div>
             <!-- couverture -->
             <div class="form-group">
               <label class="col-md-4 control-label" for="couv">couverture</label>
               <div class="col-md-4">
-                  <input name="couv" id="couv" type="text"> 
+                  <input name="couv" id="couv" type="text" value="<?php if (isset($couv)){echo $couv;}?>"> 
               </div>
             </div>
             <!-- Multiple Radios (inline) -->
@@ -58,7 +68,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
 
             </fieldset>
-            </form><?php var_dump($create) ;echo $text; ?>
+            </form>
       	</div>
       	<!-- /. contenu  -->
          <!-- /. ROW  -->           

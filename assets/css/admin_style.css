@@ -116,6 +116,23 @@ footer {
        
         color:#fff;
     }
+/*============================================
+            MEDIA SIDE
+==============================================*/
+.sidemedia{
+    text-align: center;
+}
+
+.sidemediabloc{
+
+}
+.sidemediabloc img{
+    width: 48%;
+    display: inline-block;
+    max-height: 150px;
+    overflow: scroll;
+}
+
 
 /*==============================================
     MEDIA QUERIES     

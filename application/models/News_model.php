@@ -5,7 +5,11 @@ class News_model extends CI_Model
     /****** création d'une news         *********/
     /********************************************/
     public function new_news($post){
-
+        foreach ($post as $key => $value){
+            $array[$key] = $value;
+        }
+        //elements/newsbanner.png
+        return false;
     }
     /********************************************/
     /****** effacement d'une news       *********/

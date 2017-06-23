@@ -87,14 +87,30 @@ class Admin extends CI_Controller {
 		//chargement models
 		$this->load->model('news_model');
 		$this->load->helper('directory');
+		//si abandon
+		if (isset($_POST['abandon'])) {
+	    	redirect('/admin/actu', 'refresh');
+	    }
 		//verif si connecté
 	    if (!$this->isco) {
 	    	redirect('/admin', 'refresh');
 	    }
 
 	    if (isset($_POST['create'])) {
-	    	$this->data2['create'] = $_POST;
-	    	$this->data2['text'] = $_POST['text'];
+        	//enregistrement
+        	$enregistrement = $this->news_model->new_news($_POST);
+    		//si ok retour actu
+        	if ($enregistrement) {
+        		redirect('/admin/actu', 'refresh');
+        	}
+    		//si non retour creation
+        	else{
+        		//recuperation données
+		    	foreach ($_POST as $key => $value){
+	            	$this->data2[$key] = $value;
+	        	}
+        		$this->data2['message'] = "une erreur s'est produite durant l'enregistrement";
+        	}
 	    }
 	    //recuperation medias
 	    $this->data['medias'] = $map = directory_map('./assets/images/medias');
