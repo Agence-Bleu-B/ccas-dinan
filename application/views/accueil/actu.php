@@ -5,6 +5,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!-- BLOCK CONTENT -->
 <section id="content" class="container">
 
+  <!-- SLIDER -->
+  <?php $this->load->view('common/sliderMenu'); ?>
+
   <!-- MIETTES DE PAIN -->
   <ol class="breadcrumb row">
     <li><a href="<?php echo site_url(); ?>">Accueil</a></li>
