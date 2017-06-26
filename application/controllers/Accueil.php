@@ -47,7 +47,7 @@ class Accueil extends CI_Controller {
 
 		$this->load->view('common/head');
 		$this->load->view('common/header', $this->data);
-	  $this->load->view('accueil/actu',$this->data2);
+	  $this->load->view('common/actu',$this->data2);
     $this->load->view('common/footer');
 	}
 

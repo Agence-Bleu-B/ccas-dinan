@@ -43,4 +43,17 @@ class Personnel extends CI_Controller {
 		}
     $this->load->view('common/footer');
 	}
+
+	public function actualite($slug) // Actualité unique
+	{
+		$this->load->model('news_model');
+
+		$id = explode('-', $slug, 2)[0]; //recuperation de l'id
+		$this->data['news'] = $this->news_model->load_news($id);
+
+		$this->load->view('common/head');
+		$this->load->view('common/header', $this->data);
+	  $this->load->view('common/actu',$this->data2);
+    $this->load->view('common/footer');
+	}
 }

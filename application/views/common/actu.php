@@ -11,7 +11,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <!-- MIETTES DE PAIN -->
   <ol class="breadcrumb row">
     <li><a href="<?php echo site_url(); ?>">Accueil</a></li>
-    <li><a href="<?php echo site_url('accueil/actualites'); ?>">En ce moment...</a></li>
+    <?php if ($news['cible'] == 1): //check si news personnel ou pas ?>
+      <li><a href="<?php echo site_url('personnel'); ?>">Mon espace</a></li>
+    <?php else: ?>
+      <li><a href="<?php echo site_url('accueil/actualites'); ?>">En ce moment...</a></li>
+    <?php endif; ?>
     <li class="active"><?php echo $news['titre'] ?></li>
   </ol>
 
