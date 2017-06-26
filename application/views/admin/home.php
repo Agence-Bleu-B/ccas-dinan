@@ -22,7 +22,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           	</div>
           	<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
           		<div class="div-square">
-	               	<a href="blank.html" >
+	               	<a href="<?php echo site_url('admin/gestionpersonnel'); ?>" >
 						<i class="fa fa-users fa-5x"></i>
 	          			<h4>Personnel CCAS</h4>
 	          		</a>
