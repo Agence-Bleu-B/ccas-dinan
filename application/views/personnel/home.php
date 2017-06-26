@@ -36,7 +36,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <?php foreach ($news_liste as $news): ?>
       <div class="row">
         <div class="col-xs-1">
-          <img src="<?php echo $news['couverture']; ?>" class="img-responsive">
+          <img src="<?php echo img_url($news['couverture']); ?>" class="img-responsive">
         </div>
         <div class="col-xs-11">
           <h3><a href="#"><?php echo $news['titre']; ?></a> <br><small><i class="fa fa-calendar" aria-hidden="true"></i> <?php echo $news['date']; ?></small></h3>

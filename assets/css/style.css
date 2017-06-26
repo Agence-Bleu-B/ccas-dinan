@@ -52,9 +52,18 @@ header nav .btn{
   border: 1px solid lightgrey;
   padding: 0 10px;
 }
+#content .news ul{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 #list_news h3{
   margin-top: 0;
+}
+#list_news img{
+  height: 50px;
+  width: 50px;
 }
 
 footer img{

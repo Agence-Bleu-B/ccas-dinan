@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="col-xs-12 col-md-4 col-md-push-8">
       <div class="news">
         <h2>En ce moment...</h2>
-        <ul class="">
+        <ul>
           <?php
           $nb_news = count($news_liste);
           if ($nb_news > 5) {
@@ -28,7 +28,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <li><?php echo $news_liste[$i]['date']; ?> : <a href="#"><?php echo $news_liste[$i]['titre']; ?></a></li>
           <?php endfor; ?>
         </ul>
+        <p><a href="<?php echo site_url('accueil/actualites'); ?>">Voir toutes les actualités</a></p>
       </div>
+      <br>
     </div>
     <div class="col-xs-6 col-md-4 col-md-pull-4 accent accent-1">
       <a href="<?php echo site_url('services/action_sociales'); ?>">
