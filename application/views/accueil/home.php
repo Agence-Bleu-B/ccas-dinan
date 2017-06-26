@@ -19,13 +19,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <h2>En ce moment...</h2>
         <ul>
           <?php
-          $nb_news = count($news_liste);
+          $nb_news = count($news_liste); //limite de 5 news
           if ($nb_news > 5) {
             $nb_news = 5;
           }
            ?>
           <?php for($i=0; $i<$nb_news; $i++): ?>
-            <li><?php echo $news_liste[$i]['date']; ?> : <a href="#"><?php echo $news_liste[$i]['titre']; ?></a></li>
+            <li><?php echo $news_liste[$i]['date']; ?> : <a href="<?php echo site_url('accueil/actualite/' . $news_liste[$i]['id'] . '-' . str_replace(' ', '-', $news_liste[$i]['titre'])) ?>"><?php echo $news_liste[$i]['titre']; ?></a></li>
           <?php endfor; ?>
         </ul>
         <p><a href="<?php echo site_url('accueil/actualites'); ?>">Voir toutes les actualités</a></p>

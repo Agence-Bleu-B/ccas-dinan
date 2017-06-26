@@ -34,7 +34,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <img src="<?php echo img_url($news['couverture']); ?>" class="img-responsive">
         </div>
         <div class="col-xs-11">
-          <h3><a href="#"><?php echo $news['titre']; ?></a> <br><small><i class="fa fa-calendar" aria-hidden="true"></i> <?php echo $news['date']; ?></small></h3>
+          <h3><a href="<?php echo site_url('accueil/actualite/' . $news['id'] . '-' . str_replace(' ', '-', $news['titre'])) ?>"><?php echo $news['titre']; ?></a> <br><small><i class="fa fa-calendar" aria-hidden="true"></i> <?php echo $news['date']; ?></small></h3>
         </div>
       </div>
       <br>
