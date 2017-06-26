@@ -98,7 +98,7 @@ class Admin extends CI_Controller {
 
 	    if (isset($_POST['create'])) {
         	//enregistrement
-        	$enregistrement = $this->news_model->new_news($_POST);
+        	$this->data2['testin'] = $enregistrement = $this->news_model->new_news($_POST);
     		//si ok retour actu
         	if ($enregistrement) {
         		redirect('/admin/actu', 'refresh');

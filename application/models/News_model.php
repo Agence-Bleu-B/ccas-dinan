@@ -5,25 +5,35 @@ class News_model extends CI_Model
     /****** création d'une news         *********/
     /********************************************/
     public function new_news($post){
+        $array = array();
         foreach ($post as $key => $value){
-            $array[$key] = $value;
+            $$key = $value;
         }
+        $array['cible'] = $cible;
+        $array['date'] = time();
         //verifications
-        if (!isset($array['titre'])) {
-            $array['titre'] = 'actualité du '.now();
+
+        if (!isset($titre)|| $titre == "") {
+            $array['titre'] = 'actualité du '.date('d/m/Y',time());
         }
-        if (!isset($array['couv'])) {
-            $array['couv'] = 'elements/newsbanner.png';
+        else{
+            $array['titre'] = $titre;
+        }
+        if (!isset($couv)|| $couv == "") {
+            $array['couverture'] = 'elements/newsbanner.png';
         }
         else{
             //decoupage couverture
-            $exp = explode('images/', $array['couv']);
-            $array['couv'] = $exp[1];
+            $exp = explode('images/', $couv);
+            $array['couverture'] = $exp[1];
         }
-        if (!isset($array['text'])) {
+        if (!isset($text)) {
             $array['text'] = ' ';
         }
-        return $str = $this->db->insert_string('news', $array);
+        else {
+            $array['text'] = $text;
+        }
+        return $this->db->insert('news', $array);
         
     }
     /********************************************/
@@ -33,14 +43,7 @@ class News_model extends CI_Model
         //delete from news
         $this->db->where('id', $id);
         $this->db->delete('news');
-        //delete from news_file
-        $this->db->where('id_news', $id);
-        $this->db->delete('news_file');
         //verification si fichier
-        $name = 'news/'.$id ;
-        $path = file_url($name);
-        delete_files($path);
-        rmdir($path);
         return "l'actualité à été supprimée" ;
     }
     /********************************************/
@@ -74,9 +77,19 @@ class News_model extends CI_Model
         switch ($cible) {
             case 2:
                 # requete publique only
+                $this->db->select();
+                $this->db->where('cible', 2);
+                $this->db->order_by('date', 'DESC');
+                $this->db->limit($limit,$offset);
+                $query = $this->db->get('news');
                 break;
             case 1:
                 # requete perso only
+                $this->db->select();
+                $this->db->where('cible', 1);
+                $this->db->order_by('date', 'DESC');
+                $this->db->limit($limit,$offset);
+                $query = $this->db->get('news');
                 break;
             case 0:
                 # requete all
@@ -87,6 +100,11 @@ class News_model extends CI_Model
                 break;
             default:
                 # requete publique only
+                $this->db->select();
+                $this->db->where('cible', 2);
+                $this->db->order_by('date', 'DESC');
+                $this->db->limit($limit,$offset);
+                $query = $this->db->get('news');
                 break;
         }
         // mise en variable
@@ -95,7 +113,7 @@ class News_model extends CI_Model
         {
             $return[$i]['titre'] = $row['titre'];
             $return[$i]['id'] = $row['id'];
-            $return[$i]['date'] = $row['date'];
+            $return[$i]['date'] = date('d/m/Y',$row['date']);
             $return[$i]['couverture'] = $row['couverture'];
             $return[$i]['cible'] = $this->cible($row['cible']);
             $return[$i]['text'] = $row['text'];

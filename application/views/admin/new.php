@@ -43,11 +43,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               <label class="col-md-4 control-label" for="radios">Cible</label>
               <div class="col-md-4"> 
                 <label class="radio-inline" for="radios-0">
-                  <input name="radios" id="radios-0" value="1" checked="checked" type="radio">
+                  <input name="cible" id="radios-0" value="1" checked="checked" type="radio">
                   Personnel
                 </label> 
                 <label class="radio-inline" for="radios-1">
-                  <input name="radios" id="radios-1" value="2" type="radio">
+                  <input name="cible" id="radios-1" value="2" type="radio">
                   Publique
                 </label>
               </div>
