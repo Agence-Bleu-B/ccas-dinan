@@ -18,11 +18,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <div class="news">
         <h2>En ce moment...</h2>
         <ul class="">
-          <li><a href="#">news 1</a></li>
-          <li><a href="#">news 2</a></li>
-          <li><a href="#">news 3</a></li>
-          <li><a href="#">news 4</a></li>
-          <li>...</li>
+          <?php
+          $nb_news = count($news_liste);
+          if ($nb_news > 5) {
+            $nb_news = 5;
+          }
+           ?>
+          <?php for($i=0; $i<$nb_news; $i++): ?>
+            <li><?php echo $news_liste[$i]['date']; ?> : <a href="#"><?php echo $news_liste[$i]['titre']; ?></a></li>
+          <?php endfor; ?>
         </ul>
       </div>
     </div>

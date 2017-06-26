@@ -18,6 +18,9 @@ class Accueil extends CI_Controller {
 
 	public function index()
 	{
+		$this->load->model('news_model');
+		$this->data2['news_liste'] = $this->news_model->get_list(2,0);
+		
 		$this->load->view('common/head');
 		$this->load->view('common/header', $this->data);
     $this->load->view('accueil/home',$this->data2);
@@ -26,6 +29,9 @@ class Accueil extends CI_Controller {
 
 	public function actualites() // Liste actualites
 	{
+		$this->load->model('news_model');
+		$this->data2['news_liste'] = $this->news_model->get_list(2,0);
+
 		$this->load->view('common/head');
 		$this->load->view('common/header', $this->data);
 	  $this->load->view('accueil/actusListe',$this->data2);
