@@ -98,7 +98,7 @@ class Admin extends CI_Controller {
 
 	    if (isset($_POST['create'])) {
         	//enregistrement
-        	$this->data2['testin'] = $enregistrement = $this->news_model->new_news($_POST);
+        	$enregistrement = $this->news_model->new_news($_POST);
     		//si ok retour actu
         	if ($enregistrement) {
         		redirect('/admin/actu', 'refresh');
@@ -117,6 +117,49 @@ class Admin extends CI_Controller {
 	    //affichage page selon connection
 		$this->load->view('admin/header',$this->data);
 		$this->load->view('admin/new',$this->data2);
+		$this->load->view('admin/footer',$this->data);
+	}
+	public function modifactu(){
+		//chargement models
+		$this->load->model('news_model');
+		$this->load->helper('directory');
+		//si abandon
+		if (isset($_POST['abandon'])) {
+	    	redirect('/admin/actu', 'refresh');
+	    }
+		//verif si connecté
+	    if (!$this->isco) {
+	    	redirect('/admin', 'refresh');
+	    }
+
+	    if (isset($_POST['modif'])) {
+        	//enregistrement
+        	$enregistrement = $this->news_model->modif_news($_POST,$_GET['id']);
+    		//si ok retour actu
+        	if ($enregistrement) {
+        		redirect('/admin/actu', 'refresh');
+        	}
+    		//si non retour creation
+        	else{
+        		//recuperation données
+		    	foreach ($_POST as $key => $value){
+	            	$this->data2[$key] = $value;
+	        	}
+        		$this->data2['message'] = "une erreur s'est produite durant l'enregistrement";
+        	}
+	    }
+	    else{
+	    	// $news = array();
+	    	$news = $this->news_model->load_news($_GET['id']);
+	    	foreach ($news as $key => $value){
+            	$this->data2[$key] = $value;
+        	}
+	    }
+	    //recuperation medias
+	    $this->data['medias'] = $map = directory_map('./assets/images/medias');
+	    //affichage page selon connection
+		$this->load->view('admin/header',$this->data);
+		$this->load->view('admin/modif-actu',$this->data2);
 		$this->load->view('admin/footer',$this->data);
 	}
 }

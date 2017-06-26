@@ -19,12 +19,12 @@ class News_model extends CI_Model
         else{
             $array['titre'] = $titre;
         }
-        if (!isset($couv)|| $couv == "") {
+        if (!isset($couverture)|| $couverture == "") {
             $array['couverture'] = 'elements/newsbanner.png';
         }
         else{
             //decoupage couverture
-            $exp = explode('images/', $couv);
+            $exp = explode('images/', $couverture);
             $array['couverture'] = $exp[1];
         }
         if (!isset($text)) {
@@ -49,14 +49,54 @@ class News_model extends CI_Model
     /********************************************/
     /****** modification d'une news     *********/
     /********************************************/
-    public function modif_news(){
-        # code...
+    public function modif_news($post,$id){
+        $array = array();
+        foreach ($post as $key => $value){
+            $$key = $value;
+        }
+        $array['cible'] = $cible;
+        $array['date'] = time();
+        //verifications
+
+        if (!isset($titre)|| $titre == "") {
+            $array['titre'] = 'actualité du '.date('d/m/Y',time());
+        }
+        else{
+            $array['titre'] = $titre;
+        }
+        if (!isset($couverture)|| $couverture == "") {
+            $array['couverture'] = 'elements/newsbanner.png';
+        }
+        else{
+            $finder = stripos($couverture, 'images/');
+            //decoupage couverture si besoin
+            if ($finder) {
+                $exp = explode('images/', $couverture);
+                $array['couverture'] = $exp[1];
+            }
+            else{
+                $array['couverture'] = $couverture;
+            }
+            
+        }
+        if (!isset($text)) {
+            $array['text'] = ' ';
+        }
+        else {
+            $array['text'] = $text;
+        }
+        $this->db->where('id',$id);
+        return $this->db->update('news', $array);
     }
     /********************************************/
     /****** chargement d'une news (detail) ******/
     /********************************************/
-    public function load_news(){
-
+    public function load_news($id){
+        $this->db->select("*");
+        $this->db->where('id', $id);
+        $query = $this->db->get('news');
+        $result = $query->result_array();
+        return $result[0];
     }
     /********************************************/
     /****** recuperation liste des news *********/

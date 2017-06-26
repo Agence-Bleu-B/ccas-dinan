@@ -43,7 +43,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  					<li <?php if ($pagecours == 'index') {echo 'class="active-link"';}?>>
                         <a href="<?php echo site_url('admin'); ?>" ><i class="fa fa-desktop "></i>Accueil</a>
                     </li>
-                    <li <?php if ($pagecours == 'actu' || $pagecours == 'creation' ) {echo 'class="active-link"';}?>>
+                    <li <?php if ($pagecours == 'actu' || $pagecours == 'creation' || $pagecours == 'modifactu'  ) {echo 'class="active-link"';}?>>
                         <a href="<?php echo site_url('admin/actu'); ?>"><i class="fa fa-newspaper-o "></i>Actualités</a>
                     </li>
                     <li>
@@ -60,7 +60,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </li>
                 </ul>
             </div>
-            <?php if ($pagecours == 'creation' ){ ?>
+            <?php if ($pagecours == 'creation' || $pagecours == 'modifactu'  ){ ?>
 			<div class="sidemedia">
 				<p>Medias</p>
 				<div class="sidemediabloc">

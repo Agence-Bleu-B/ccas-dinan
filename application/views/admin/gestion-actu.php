@@ -76,7 +76,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <?php echo $value['cible'] ; ?>
                       </td>
                       <td>
-                        <a href="#" class="btn btn-primary" style="width: 100%; margin-bottom: 5px;">
+                        <a href="<?php echo site_url('admin/modifactu?id=').$value['id']; ?>" class="btn btn-primary" style="width: 100%; margin-bottom: 5px;">
                           <span class="glyphicon glyphicon-pencil"></span> Modifier 
                         </a>
                         <a href="<?php echo site_url('admin/actu?delete=').$value['id']; ?>" class="btn btn-danger" style="width: 100%;">
