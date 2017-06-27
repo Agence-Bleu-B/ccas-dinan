@@ -22,6 +22,11 @@ header nav .btn{
   color: #000;
 }
 
+#slider img{
+  max-width: 1170px;
+  max-height: 500px;
+}
+
 #content div>a>img+h2{
   color: #FFF;
   /*font-weight: bold;*/
