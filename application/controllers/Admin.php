@@ -229,4 +229,14 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/modifperso',$this->data2);
 		$this->load->view('admin/footer',$this->data);
 	}
+	public function documents(){
+		//verif si connecté
+	    if (!$this->isco) {
+	    	redirect('/admin', 'refresh');
+	    }
+	    //affichage page selon connection
+		$this->load->view('admin/header',$this->data);
+		$this->load->view('admin/documents',$this->data2);
+		$this->load->view('admin/footer',$this->data);
+	}
 }

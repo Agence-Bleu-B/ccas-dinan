@@ -14,7 +14,7 @@ body {
 #page-wrapper {
     padding: 15px 15px;
     min-height: 600px;
-    background:#F3F3F3;
+    background:#bcbcbc;
    
 }
 #page-inner {
@@ -48,7 +48,7 @@ font-size: 16px;
 .sidebar-collapse .nav > li > a:hover,
 .sidebar-collapse .nav > li > a:focus {
 	
-	background:#F3F3F3;
+	background:#bcbcbc;
 	outline:0;
 }
 
@@ -80,7 +80,7 @@ min-height: 80px;
         text-decoration:none;
     }
 .active-link {
-    background-color:#f3f3f3;
+    background-color:#bcbcbc;
 }
     
 /*==============================================
