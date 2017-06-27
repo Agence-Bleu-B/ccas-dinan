@@ -165,7 +165,6 @@ class Admin extends CI_Controller {
 	public function gestionpersonnel(){
 		//chargement models
 		$this->load->model('personnel_model');
-		$this->load->helper('directory');
 		//verif si connecté
 	    if (!$this->isco) {
 	    	redirect('/admin', 'refresh');
@@ -206,6 +205,28 @@ class Admin extends CI_Controller {
 	    //affichage page selon connection
 		$this->load->view('admin/header',$this->data);
 		$this->load->view('admin/gestion-personnel',$this->data2);
+		$this->load->view('admin/footer',$this->data);
+	}
+	public function modifperso(){
+		//chargement models
+		$this->load->model('personnel_model');
+		//verif si connecté
+	    if (!$this->isco) {
+	    	redirect('/admin', 'refresh');
+	    }
+	    if (isset($_POST['modif'])) {
+	    	//enregistrement modif
+	    	$message = $this->personnel_model->modif_perso($_POST,$_GET['id']);
+	    	$this->data2['message'] = $message;
+	    }
+	    //chargement du profil
+	    $profil = $this->personnel_model->load_perso($_GET['id']);
+	    foreach ($profil as $key => $value) {
+	    	$this->data2[$key] = $value;
+	    }
+	    //affichage page selon connection
+		$this->load->view('admin/header',$this->data);
+		$this->load->view('admin/modifperso',$this->data2);
 		$this->load->view('admin/footer',$this->data);
 	}
 }

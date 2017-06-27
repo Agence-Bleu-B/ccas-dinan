@@ -46,7 +46,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <li <?php if ($pagecours == 'actu' || $pagecours == 'creation' || $pagecours == 'modifactu'  ) {echo 'class="active-link"';}?>>
                         <a href="<?php echo site_url('admin/actu'); ?>"><i class="fa fa-newspaper-o "></i>Actualités</a>
                     </li>
-                    <li <?php if ($pagecours == 'gestionpersonnel') {echo 'class="active-link"';}?>>
+                    <li <?php if ($pagecours == 'gestionpersonnel'||$pagecours == 'modifperso') {echo 'class="active-link"';}?>>
                         <a href="<?php echo site_url('admin/gestionpersonnel'); ?>"><i class="fa fa-users "></i>Personnel CCAS</a>
                     </li>
                     <li>

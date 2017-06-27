@@ -35,6 +35,9 @@ class Personnel_model extends CI_Model
         //verification si fichier
         return "l'entrée à été supprimée" ;
     }
+    /********************************************/
+    /****** recup list des employés     *********/
+    /********************************************/
     public function get_list($page){
         //init return
         $return = array();
@@ -89,5 +92,29 @@ class Personnel_model extends CI_Model
         }
         $this->db->insert('personnel', $array);
         return 'entrée ajoutée'; 
+    }
+    /********************************************/
+    /****** chargement d'un employé     *********/
+    /********************************************/
+    public function load_perso($id){
+        $this->db->select("*");
+        $this->db->where('id', $id);
+        $query = $this->db->get('personnel');
+        $result = $query->result_array();
+        return $result[0];
+    }
+    /********************************************/
+    /****** modification d'une entrée   *********/
+    /********************************************/
+    public function modif_perso($post,$id){
+        $array = array();
+        foreach ($post as $key => $value) {
+            if ($key !== 'modif') {
+                $array[$key] = $value;
+            }
+        }
+        $this->db->where('id',$id);
+        $this->db->update('personnel', $array);
+        return $message = "Utilisateur modifié";
     }
 }
