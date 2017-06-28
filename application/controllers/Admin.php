@@ -239,4 +239,43 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/documents',$this->data2);
 		$this->load->view('admin/footer',$this->data);
 	}
+	public function gestionimg(){
+		//verif si connecté
+	    if (!$this->isco) {
+	    	redirect('/admin', 'refresh');
+	    }
+	    
+	    //affichage page selon connection
+		$this->load->view('admin/header',$this->data);
+		$this->load->view('admin/gestionimg',$this->data2);
+		$this->load->view('admin/footer',$this->data);
+	}
+	public function gestionpdf(){
+		//verif si connecté
+	    if (!$this->isco) {
+	    	redirect('/admin', 'refresh');
+	    }
+	    //si upload
+	    if (isset($_POST['upload'])) { 
+	    	//load library
+	    	$this->load->library('upload');
+	    	// config upload
+	    	$config['upload_path'] = './assets/pdf/';
+	    	$config['allowed_types'] = 'pdf';
+        	$config['max_size']    = '0';
+        	$this->upload->initialize($config);
+        	if (!$this->upload->do_upload('file')) {
+        		$this->data2['message'] = "echec";$this->data2['message2'] = array('error' => $this->upload->display_errors());
+        	}
+        	else{
+        		$this->data2['message'] = "ok";
+        	}
+        	$this->upload->display_errors('<p>', '</p>');
+
+	    }
+	    //affichage page selon connection
+		$this->load->view('admin/header',$this->data);
+		$this->load->view('admin/gestionpdf',$this->data2);
+		$this->load->view('admin/footer',$this->data);
+	}
 }

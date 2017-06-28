@@ -55,7 +55,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <li>
                         <a href="#"><i class="fa fa-edit"></i>Pages</a>
                     </li>
-                    <li <?php if ($pagecours == 'documents') {echo 'class="active-link"';}?>>
+                    <li <?php if ($pagecours == 'documents'||$pagecours == 'gestionimg'||$pagecours == 'gestionpdf') {echo 'class="active-link"';}?>>
                         <a href="<?php echo site_url('admin/documents'); ?>"><i class="fa fa-book"></i>Documents</a>
                     </li>
                 </ul>

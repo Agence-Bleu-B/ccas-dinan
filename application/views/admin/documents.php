@@ -14,7 +14,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       	<div class="row text-center pad-top">
       		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
           		<div class="div-square">
-	               	<a href="<?php echo site_url('admin/actu'); ?>" >
+	               	<a href="<?php echo site_url('admin/gestionpdf'); ?>" >
 						<i class="fa fa-file-pdf-o fa-5x"></i>
 	          			<h4>PDF</h4>
 	          		</a>
@@ -22,7 +22,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           	</div>
           	<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
           		<div class="div-square">
-	               	<a href="<?php echo site_url('admin/gestionpersonnel'); ?>" >
+	               	<a href="<?php echo site_url('admin/gestionimg'); ?>" >
 						<i class="fa fa-picture-o fa-5x"></i>
 	          			<h4>Images</h4>
 	          		</a>
