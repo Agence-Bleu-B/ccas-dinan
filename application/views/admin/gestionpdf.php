@@ -23,7 +23,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   }}   ?>
           </div>
           <div class="col-md-12" style="margin-top: 15px;"><h3>Fichiers enregistrés :</h3>
-            <?php foreach ($pdf as $key => $value) { ?>
+            <?php if (isset($pdf)&& $pdf != null) {
+            foreach ($pdf as $key => $value) { ?>
             <div style="margin-top: 5px;">
               <a href="<?php echo base_url().'assets/pdf/'.$value; ?>" target="blank" >
                 <?php echo $value; ?>
@@ -35,7 +36,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   </button>
                 </a>
               </div> 
-            <?php } ?>
+            <?php }} ?>
           </div>
       	</div>
       	</div>
