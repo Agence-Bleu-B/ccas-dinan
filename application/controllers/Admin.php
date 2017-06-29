@@ -251,6 +251,8 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/footer',$this->data);
 	}
 	public function gestionpdf(){
+		//load models
+		$this->load->helper('directory');
 		//verif si connecté
 	    if (!$this->isco) {
 	    	redirect('/admin', 'refresh');
@@ -268,11 +270,18 @@ class Admin extends CI_Controller {
         		$this->data2['message'] = "echec";$this->data2['message2'] = array('error' => $this->upload->display_errors());
         	}
         	else{
-        		$this->data2['message'] = "ok";
+        		$this->data2['message'] = "fichier correctement envoyé";
         	}
         	$this->upload->display_errors('<p>', '</p>');
 
 	    }
+	    //si demande de delete
+	    if (isset($_GET['delete'])) {
+	    	$path = "./assets/pdf/".$_GET['delete'];
+	    	unlink($path);
+	    }
+	    //recup pdf
+	    $this->data2['pdf'] = $map = directory_map('./assets/pdf');
 	    //affichage page selon connection
 		$this->load->view('admin/header',$this->data);
 		$this->load->view('admin/gestionpdf',$this->data2);
