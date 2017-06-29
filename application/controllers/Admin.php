@@ -240,11 +240,37 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/footer',$this->data);
 	}
 	public function gestionimg(){
+		//load models
+		$this->load->helper('directory');
 		//verif si connecté
 	    if (!$this->isco) {
 	    	redirect('/admin', 'refresh');
 	    }
-	    
+	    //si upload
+	    if (isset($_POST['upload'])) { 
+	    	//load library
+	    	$this->load->library('upload');
+	    	// config upload
+	    	$config['upload_path'] = './assets/images/medias';
+	    	$config['allowed_types'] = 'gif|jpg|png';
+        	$config['max_size']    = '0';
+        	$this->upload->initialize($config);
+        	if (!$this->upload->do_upload('photo')) {
+        		$this->data2['message'] = "echec";$this->data2['message2'] = array('error' => $this->upload->display_errors());
+        	}
+        	else{
+        		$this->data2['message'] = "fichier correctement envoyé";
+        	}
+        	$this->upload->display_errors('<p>', '</p>');
+
+	    }
+	    //si demande de delete
+	    if (isset($_GET['delete'])) {
+	    	$path = "./assets/images/medias/".$_GET['delete'];
+	    	unlink($path);
+	    }
+	    //recup medias
+	    $this->data2['medias'] = $map = directory_map('./assets/images/medias');
 	    //affichage page selon connection
 		$this->load->view('admin/header',$this->data);
 		$this->load->view('admin/gestionimg',$this->data2);
