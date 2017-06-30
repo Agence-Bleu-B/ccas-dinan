@@ -24,8 +24,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	  tinymce.init({
 	    selector: 'textarea',
 	    height: 600,
-	    language: 'fr_FR',plugins: "paste",
+	    plugins: 'link image code paste',
+	    language: 'fr_FR',
 	    branding: false,
+	    relative_urls: false,
 	    menubar: false,
 	    toolbar: 'undo redo | styleselect | bold italic | link image',
 	    paste_data_images: true
