@@ -22,8 +22,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     echo $value;
                   }}   ?>
           </div>
-          <div class="col-md-12" style="margin-top: 15px;"><h3>Fichiers enregistrés :</h3>
+          <div class="col-md-12" style="margin-top: 15px;">
+            <h3>Fichiers enregistrés :</h3>
+            <br>
             <?php if (isset($medias)&& $medias != null) {
+            $i=1; // compteur d'images
             foreach ($medias as $key => $value) { ?>
             <div class="col-xs-2">
               <a class="col-xs-12" href="<?php echo base_url().'assets/images/medias/'.$value; ?>" target="blank" >
@@ -36,6 +39,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </button>
               </a>
             </div>
+            <?php if ($i % 6 == 0): //Toute les 6 images?>
+              <div class="clearfix"></div>
+              <br>
+            <?php endif; $i++;?>
             <?php }} ?>
           </div>
 
