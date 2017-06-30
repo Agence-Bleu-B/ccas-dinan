@@ -62,7 +62,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
             <?php if ($pagecours == 'creation' || $pagecours == 'modifactu'  ){ ?>
 			<div class="sidemedia">
-				<p>Medias</p>
+				<p class="sidemediatitre">Medias</p>
 				<div class="sidemediabloc">
 					<?php foreach ($medias as $key => $value) { ?><img class="img-responsive" src="<?php echo img_url('medias/'.$value) ;?>">
 						
