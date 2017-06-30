@@ -5,9 +5,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div id="page-inner">
         <div class="row">
             <div class="col-md-12">
-             <h2>GESTION IMAGES</h2>   
+             <h2>GESTION IMAGES</h2>
             </div>
-        </div>              
+        </div>
          <!-- /. ROW  -->
       	<hr />
       	<!-- contenu a partir d'ici -->
@@ -25,24 +25,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <div class="col-md-12" style="margin-top: 15px;"><h3>Fichiers enregistrés :</h3>
             <?php if (isset($medias)&& $medias != null) {
             foreach ($medias as $key => $value) { ?>
-            <div style="margin-top: 5px;">
-              <a href="<?php echo base_url().'assets/images/medias/'.$value; ?>" target="blank" >
-                <img src="<?php echo base_url().'assets/images/medias/'.$value; ?>">
-                </a>
+            <div class="col-xs-2">
+              <a class="col-xs-12" href="<?php echo base_url().'assets/images/medias/'.$value; ?>" target="blank" >
+                <img class="thumbnail img-responsive center-block" src="<?php echo base_url().'assets/images/medias/'.$value; ?>">
+              </a>
                 <span>   </span>
-                <a href="<?php echo site_url('admin/gestionimg?delete=').$value; ?>">
-                  <button class="btn btn-danger">
-                    <span class="glyphicon glyphicon-remove-circle"></span>
-                  </button>
-                </a>
-              </div> 
+              <a class="col-xs-12" href="<?php echo site_url('admin/gestionimg?delete=').$value; ?>">
+                <button class="btn btn-danger">
+                  <span class="glyphicon glyphicon-remove-circle"></span>
+                </button>
+              </a>
+            </div>
             <?php }} ?>
           </div>
-          	
+
         </div>
       	</div>
       	<!-- /. contenu  -->
-         <!-- /. ROW  -->           
+         <!-- /. ROW  -->
 	</div>
      <!-- /. PAGE INNER  -->
 </div>
