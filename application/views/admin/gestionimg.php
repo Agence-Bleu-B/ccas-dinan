@@ -25,25 +25,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <div class="col-md-12" style="margin-top: 15px;">
             <h3>Fichiers enregistrés :</h3>
             <br>
-            <?php if (isset($medias)&& $medias != null) {
-            $i=1; // compteur d'images
-            foreach ($medias as $key => $value) { ?>
-            <div class="col-xs-2">
-              <a class="col-xs-12" href="<?php echo base_url().'assets/images/medias/'.$value; ?>" target="blank" >
-                <img class="thumbnail img-responsive center-block" src="<?php echo base_url().'assets/images/medias/'.$value; ?>">
-              </a>
-                <span>   </span>
-              <a class="col-xs-12" href="<?php echo site_url('admin/gestionimg?delete=').$value; ?>">
-                <button class="btn btn-danger">
-                  <span class="glyphicon glyphicon-remove-circle"></span>
-                </button>
-              </a>
-            </div>
-            <?php if ($i % 6 == 0): //Toute les 6 images?>
-              <div class="clearfix"></div>
-              <br>
-            <?php endif; $i++;?>
-            <?php }} ?>
+                <div class="row">
+                <?php if (isset($medias)&& $medias != null) {
+                $i=1; // compteur d'images
+                foreach ($medias as $key => $value) { ?>
+                <div class="col-md-2">
+                  <a class="col-xs-12" href="<?php echo base_url().'assets/images/medias/'.$value; ?>" target="blank" style="padding-top: 30px;">
+                    <img class="thumbnail img-responsive center-block" src="<?php echo base_url().'assets/images/medias/'.$value; ?>" >
+                  </a>
+                  <a class="col-xs-12" href="<?php echo site_url('admin/gestionimg?delete=').$value; ?>">
+                    <button class="btn btn-danger">
+                      <span class="glyphicon glyphicon-remove-circle"></span>
+                    </button>
+                  </a>
+                </div>
+                <?php if ($i % 6 == 0): //Toute les 6 images?>
+                  </div>
+                  <div class="row">
+                <?php endif; $i++;?>
+                <?php }} ?>
+              </div>
           </div>
 
         </div>
