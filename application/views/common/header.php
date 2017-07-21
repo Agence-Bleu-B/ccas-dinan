@@ -18,6 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
          <a href="<?php echo site_url('personnel'); ?>" class="btn btn-default btn pull-right"><i class="fa fa-user" aria-hidden="true"></i> Mon Espace</a>
        <?php else: ?>
          <a href="<?php echo site_url('personnel'); ?>" class="btn btn-default btn-lg pull-right"><i class="fa fa-users" aria-hidden="true"></i> Accès Personnel</a>
+         <a href="<?php echo site_url('personnel'); ?>" class="btn btn-default btn-lg pull-right"><i class="fa fa-file" aria-hidden="true"></i> Formulaires d'aides financières</a>
        <?php endif; ?>
     </div>
     <br class="visible-xs-inline">
