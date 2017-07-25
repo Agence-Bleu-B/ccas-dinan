@@ -23,8 +23,8 @@ class Accueil extends CI_Controller {
 
 		$this->load->view('common/head');
 		$this->load->view('common/header', $this->data);
-    $this->load->view('accueil/home',$this->data2);
-    $this->load->view('common/footer');
+    	$this->load->view('accueil/home',$this->data2);
+    	$this->load->view('common/footer');
 	}
 
 	public function actualites() // Liste actualites
@@ -34,8 +34,8 @@ class Accueil extends CI_Controller {
 
 		$this->load->view('common/head');
 		$this->load->view('common/header', $this->data);
-	  $this->load->view('accueil/actusListe',$this->data2);
-    $this->load->view('common/footer');
+	  	$this->load->view('accueil/actusListe',$this->data2);
+    	$this->load->view('common/footer');
 	}
 
 	public function actualite($slug) // Actualité unique
@@ -47,8 +47,17 @@ class Accueil extends CI_Controller {
 
 		$this->load->view('common/head');
 		$this->load->view('common/header', $this->data);
-	  $this->load->view('common/actu',$this->data2);
-    $this->load->view('common/footer');
+	  	$this->load->view('common/actu',$this->data2);
+    	$this->load->view('common/footer');
+	}
+	public function doc()
+	{
+		
+
+		$this->load->view('common/head');
+		$this->load->view('common/header', $this->data);
+    	$this->load->view('accueil/doc',$this->data2);
+    	$this->load->view('common/footer');
 	}
 
 }
