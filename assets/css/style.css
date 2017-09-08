@@ -193,8 +193,291 @@ div.accent{
     }
 }
 
-/* style pages doc.php sction classe="row"*/
+
+/*-------------------------
+CSS pour lapage doc.php 
+-------------------------*/
+
+/*Déffinition des bloc*/
+
+#logement {
+  position: relative;
+margin: 0px auto;
+width: 0px auto;
+background: #fff;
+border-radius: 5px;
+box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+z-index: 10;
+height:110px;
+}
+
+#embauche {
+  position: relative;
+margin: 0px auto;
+width: 0px auto;
+background: #fff;
+border-radius: 5px;
+box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+z-index: 10;
+height:110px;
+}
+
+#apprentissage {
+  position: relative;
+margin: 0px auto;
+width: 0px auto;
+background: #fff;
+border-radius: 5px;
+box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+z-index: 10;
+height:110px; 
+}
+
+#mobilité {
+ position: relative;
+margin: 0px auto;
+width: 0px auto;
+background: #fff;
+border-radius: 5px;
+box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+z-index: 10;
+height:110px;
+}
  
-.#logement {
-  background-color:#F8F8FF;
- /*div block formulaire */}
+ /*-------------------------------------------
+ Configuration des rubans pour les titre h4 
+ -------------------------------------------*/
+
+.ruban {
+background: #3687c7;
+height: 30px;
+width:260px;
+position: relative;
+left:-15px;
+top: 20px;
+/*float: left;*/
+box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+z-index: 100;
+}
+  
+.ruban h4 {
+font-size: 20px;
+color: #fff;
+text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+text-align: center;
+margin:0px auto;
+padding-top: 5px;
+}
+ 
+.ruban_gauche {
+/*border-color: transparent #133147 transparent transparent;*/
+border-color: transparent #255C87 transparent transparent;
+border-style:solid;
+border-width:15px;
+height:0px;
+width:0px;
+position: relative;
+left: -30px;
+top: 0px;
+z-index: -1;    
+}
+
+
+/*mise en pages des liste*/
+
+#lienpdf{
+
+  margin: 20px;
+}
+
+li { 
+ list-style-type: none;
+}
+
+/*mise en pages des Liens fichier pdf*/
+
+/*lien pdf aide logemant*/
+a.pdf1l {
+  text-decoration: none;
+  color: black;
+  border-radius: 0px 2px 0px 2px;
+  padding: 2px;
+  background-color:transparent; 
+  margin: 5px;
+}
+
+a.pdf1l:visited {
+}
+
+a.pdf1l:hover{
+  color:#ffffff;
+  background-color:#3687c7;
+}
+
+a.pdf1l:active{
+  color:#ffffff;
+  background-color:#2F76AD; 
+
+}
+
+a.pdf2l {
+  text-decoration: none;
+  color: black;
+  border-radius: 0px 2px 0px 2px;
+  padding: 2px;
+  background-color:transparent; 
+  margin: 5px;
+}
+
+a.pdf2l:visited {
+}
+
+a.pdf2l:hover{
+  color:#ffffff;
+  background-color:#3687c7; 
+}
+
+a.pdf2l:active{
+  color:#ffffff;
+  background-color:#2F76AD;
+}
+
+/*lien pdf aide embauche*/
+
+a.pdf1e {
+  text-decoration: none;
+  color: black;
+  border-radius: 0px 2px 0px 2px;
+  padding: 2px;
+  background-color:transparent; 
+  margin: 5px;
+
+}
+
+a.pdf1e:visited {
+}
+
+a.pdf1e:hover{
+  color:#ffffff;
+  background-color:#3687c7;
+}
+
+a.pdf1e:active{
+  color:#ffffff;
+  background-color:#2F76AD;
+}
+
+a.pdf2e {
+  text-decoration: none;
+  color: black;
+  border-radius: 0px 2px 0px 2px;
+  padding: 2px;
+  background-color:transparent; 
+  margin: 5px;
+}
+
+a.pdf2e:visited {
+}
+
+a.pdf2e:hover{
+  color:#ffffff;
+  background-color:#3687c7;
+}
+
+a.pdf2e:active{
+  color:#ffffff;
+  background-color:#2F76AD; 
+}
+
+/*lien pdf aide apprentissage*/
+
+a.pdf1a {
+  text-decoration: none;
+  color: black;
+  border-radius: 0px 2px 0px 2px;
+  padding: 2px;
+  background-color:transparent; 
+  margin: 5px;
+}
+
+a.pdf1a:visited {
+}
+
+a.pdf1a:hover{
+  color:#ffffff;
+  background-color:#3687c7;
+}
+
+a.pdf1a:active{
+  color:#ffffff;
+  background-color:#2F76AD;
+}
+
+a.pdf2a {
+  text-decoration: none;
+  color: black;
+  border-radius: 0px 2px 0px 2px;
+  padding: 2px;
+  background-color:transparent;
+  margin: 5px; 
+}
+
+a.pdf2a:visited {
+}
+
+a.pdf2a:hover{
+  color:#ffffff;
+  background-color:#3687c7;
+}
+
+a.pdf2a:active{
+  color:#2F76AD;
+  background-color:#2F76AD; 
+}
+
+/*lien pdf aide mobilité*/
+
+a.pdf1m {
+  text-decoration: none;
+  color: black;
+  border-radius: 0px 2px 0px 2px;
+  padding: 2px;
+  background-color:transparent; 
+  margin: 5px;
+}
+
+a.pdf1m:visited {  
+}
+
+a.pdf1m:hover{
+  color:#ffffff;
+  background-color:#3687c7;
+}
+
+a.pdf1m:active{
+  color:#ffffff;
+  background-color:#2F76AD;
+}
+
+a.pdf2m {
+  text-decoration: none;
+  color: black;
+  border-radius: 0px 2px 0px 2px;
+  padding: 2px;
+  background-color:transparent;
+  margin: 5px;
+}
+
+a.pdf2m:visited {
+}
+
+a.pdf2m:hover{
+  color:#ffffff;
+  background-color:#3990D4;
+}
+
+a.pdf2m:active{
+  color:#ffffff;
+  background-color:#2F76AD;
+}
+
