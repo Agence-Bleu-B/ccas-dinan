@@ -12,7 +12,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <li class="active">Accueil</li>
   </ol>
 
-  <section class="row">
+ <section class="row">
 
     <div class="col-xs-12 col-md-4 col-md-push-8">
       <div class="news">
@@ -34,13 +34,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
     <div class="col-xs-6 col-md-4 col-md-pull-4 accent accent-1">
       <a href="<?php echo site_url('services/action_sociales'); ?>">
-        <img class="img-responsive" src="<?php echo img_url("fotolia_110916723.jpg"); ?>" alt="">
+        <img class="img-responsive" src="<?php echo img_url("Capture2.png"); ?>" alt="">
         <h2>Action Sociale</h2>
       </a>
     </div>
     <div class="col-xs-6 col-md-4 col-md-pull-4 accent accent-2">
       <a href="<?php echo site_url('services/aides_a_domicile'); ?>">
-        <img class="img-responsive" src="<?php echo img_url("fotolia_145906629.jpg"); ?>" alt="">
+        <img class="img-responsive" src="<?php echo img_url("Capture1.png"); ?>" alt="">
         <h2>Aide à Domicile</h2>
       </a>
     </div>
@@ -50,13 +50,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     <div class="col-xs-6 col-md-4 accent accent-3">
       <a href="<?php echo site_url('services/ehpad'); ?>">
-        <img class="img-responsive" src="<?php echo img_url("fotolia_101840258.jpg"); ?>" alt="">
+        <img class="img-responsive" src="<?php echo img_url("Capture3.png"); ?>" alt="">
         <h2>EHPAD</h2>
       </a>
     </div>
     <div class="col-xs-6 col-md-4 accent accent-4">
       <a href="<?php echo site_url('services/hebergement_durgence'); ?>">
-        <img class="img-responsive" src="<?php echo img_url("fotolia_65076151-2.jpg"); ?>" alt="">
+        <img class="img-responsive" src="<?php echo img_url("Capture5"); ?>" alt="">
         <h2>Hebergement <br>D'Urgence</h2>
       </a>
     </div>
@@ -65,11 +65,31 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
     <div class="col-xs-6 col-md-4 accent accent-5">
       <a href="<?php echo site_url('services/portage_de_repas'); ?>">
-        <img class="img-responsive" src="<?php echo img_url("fotolia_150161025.jpg"); ?>" alt="">
+        <img class="img-responsive" src="<?php echo img_url("Capture4.png"); ?>" alt="">
         <h2>Portage de Repas</h2>
       </a>
     </div>
   </section>
+  </br>
+
+  <!--Mot du président-->
+
+  <section class="row ">
+    <h3 class="page-header">Mot du président</h3>
+    <p class="col-md-7 jumbotron">
+      DINAN est la ville centre de la nouvelle agglomération. Elle reste pourtant à taille humaine, proche de ses habitants, soucieuse de leur sécurité et de leur bien être. Face aux aléas de la vie, nos concitoyens les plus vulnérables, qu’ils soient âgés, en situation de handicap, de précarité ou d’exclusion, peuvent trouver un soutien.
+Au plus prêt de la population Dinannaise, le Centre Communal d’Action Sociale met en œuvre la politique sociale définie par la ville de DINAN. Il développe des activités et des actions destinées à assister et soutenir les personnes en difficulté. Il assure l’accueil du public, instruit les dossiers d’accès aux droits sociaux, et oriente vers les institutions adaptées. Il développe des services d’aide à domicile ou des solutions d’hébergement. En cas de besoin, il propose des aides financières ou matériels, et reste toujours disponible pour une écoute et un soutien.
+Au cœur d’un réseau d’acteurs de la solidarité, les élus et les professionnels du CCAS sont pleinement mobilisés pour accompagner nos concitoyens fragilisés, souffrant ou démunis.
+Je souhaite que ce site internet vous permette d’accéder à toutes les informations utiles, et qu’il puisse au final vous aider dans vos démarches. Les élus et les professionnels resteront toujours à votre disposition pour vous recevoir si vous le souhaitez…
+    </p>
+    <figure class="col-md-offset-1 col-md-4">
+     <img  class="img-responsive"  src="<?php echo img_url("Capture-president.png"); ?>">
+     <figcaption id="credit_photo">©Spoon Production</figcaption>
+     <figcaption>Monsieur Didier LECHIEN, Maire de DINAN et Président du CCAS</figcaption>
+    </figure>
+   
+  </section>
+
 
 </section>
 <!-- FIN BLOCK CONTENT -->
