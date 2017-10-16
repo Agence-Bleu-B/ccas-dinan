@@ -5,8 +5,71 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <section id="content" class="container">
 
   <!-- SLIDER -->
-  <?php $this->load->view('common/sliderMenu'); ?>
+  <?php //$this->load->view('common/sliderMenu'); ?>
 
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+
+        <div class="item active">
+          <a href="<?php echo site_url("services/action_sociales") ?>"><img src="<?php echo img_url("Capture2-modif") ?>" alt="..."></a>
+          <div class="carousel-caption">
+            Action Social
+          </div>
+        </div>
+
+        <div class="item">
+          <a href="<?php echo site_url("services/aides_a_domicile") ?>"><img src="<?php echo img_url("Capture1-modif") ?>" alt="..."></a>
+          <div class="carousel-caption">
+            Aides à domicile
+          </div>
+        </div>
+        
+         <div class="item">
+          <a href="<?php echo site_url("services/ehpad") ?>"><img src="<?php echo img_url("Capture3-modif") ?>" alt="..."></a>
+          <div class="carousel-caption">
+            ehpad
+          </div>
+        </div>
+           
+          <div class="item">
+          <a href="<?php echo site_url("services/hebergement_durgence") ?>"><img src="<?php echo img_url("Capture5-modif") ?>" alt="..."></a>
+          <div class="carousel-caption">
+            Hébergement d'Urgence
+          </div>
+          </div>
+
+
+          <div class="item">
+          <a href="<?php echo site_url("services/portage_de_repas") ?>"><img src="<?php echo img_url("Capture4-modif") ?>" alt="..."></a>
+          <div class="carousel-caption">
+            Portage de repas
+          </div>
+          </div>
+
+
+
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
   <!-- MIETTES DE PAIN -->
   <ol class="breadcrumb row">
     <li class="active">Accueil</li>

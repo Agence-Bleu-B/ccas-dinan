@@ -20,9 +20,11 @@ class Accueil extends CI_Controller {
 	{
 		$this->load->model('news_model');
 		$this->data2['news_liste'] = $this->news_model->get_list(2,0);
+		$this->data2['img']="Capture12-modif.png";
 
 		$this->load->view('common/head');
 		$this->load->view('common/header', $this->data);
+		//$this->load->view('common/sliderMenu',$this->data2);
     	$this->load->view('accueil/home',$this->data2);
     	$this->load->view('common/footer');
 	}

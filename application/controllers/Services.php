@@ -23,36 +23,47 @@ class Services extends CI_Controller {
 
 	public function action_sociales()
 	{
+		$this->data2['img']="Capture2-modif.png";
 		$this->load->view('common/head');
 		$this->load->view('common/header', $this->data);
-	  $this->load->view('services/actions', $this->data2);
+		$this->load->view('common/sliderMenu',$this->data2);
+	  $this->load->view('services/actions',$this->data2);
     $this->load->view('common/footer');
 	}
+
 	public function aides_a_domicile()
 	{
+		$this->data2['img']="Capture1-modif.png";
 		$this->load->view('common/head');
 		$this->load->view('common/header', $this->data);
+		$this->load->view('common/sliderMenu',$this->data2);
 	  $this->load->view('services/AaD', $this->data2);
     $this->load->view('common/footer');
 	}
 	public function ehpad()
 	{
+		$this->data2['img']="Capture3-modif.png";
 		$this->load->view('common/head');
 		$this->load->view('common/header', $this->data);
+		$this->load->view('common/sliderMenu',$this->data2);
 	  $this->load->view('services/ehpad', $this->data2);
     $this->load->view('common/footer');
 	}
 	public function hebergement_durgence()
 	{
+		$this->data2['img']="Capture5-modif.png";
 		$this->load->view('common/head');
 		$this->load->view('common/header', $this->data);
+		$this->load->view('common/sliderMenu',$this->data2);
 	  $this->load->view('services/hDu', $this->data2);
     $this->load->view('common/footer');
 	}
 	public function portage_de_repas()
 	{
+		$this->data2['img']="Capture4-modif.png";
 		$this->load->view('common/head');
 		$this->load->view('common/header', $this->data);
+		$this->load->view('common/sliderMenu',$this->data2);
 	  $this->load->view('services/repas', $this->data2);
     $this->load->view('common/footer');
 	}

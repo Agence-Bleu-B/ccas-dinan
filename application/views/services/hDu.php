@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <section id="content" class="container">
 
   <!-- SLIDER -->
-  <?php $this->load->view('common/sliderMenu'); ?>
+  <?php //$this->load->view('common/sliderMenu'); ?>
 
   <!-- MIETTES DE PAIN -->
   <ol class="breadcrumb row">
