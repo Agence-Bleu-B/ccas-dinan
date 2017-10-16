@@ -14,7 +14,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <li>Services</li>
     <li class="active">Hébergement d'Urgence</li>
   </ol>
-
+ <section class="row">
+    <div class="col-xs-offset-6">
+          <a href="<?php echo site_url('personnel'); ?>" class="btn btn-default btn-lg pull-right"><i class="fa fa-file" aria-hidden="true"></i> Formulaires d'aides financières</a>
+    </div>
+  </section>
   <section class="row">
     <div class="col-xs-12">
       <h2 class="titre4">Centre d'Hébergement d'Urgence - Abri de nuit</h2>

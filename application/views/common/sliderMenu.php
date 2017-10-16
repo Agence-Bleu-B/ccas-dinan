@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <?php if (isset($news['couverture'])): ?> <!-- Si c'est une news (ou pasge avec banniere propre) -->
     <img class="img-responsive center-block" src="<?php echo img_url($news['couverture']);?>" alt="">
   <?php else: ?> <!-- Sinon on affiche le menu slider src="http://lorempixel.com/1170/500/"-->
-    <img class="img-responsive center-block"  src="<?php echo img_url("Capture12.png") ?>"alt="">
+    <img class="img-responsive center-block"  src="<?php echo img_url("Capture1.png") ?>"alt="">
 
   <?php endif; ?>
 </div>

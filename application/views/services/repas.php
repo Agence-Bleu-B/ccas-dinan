@@ -14,9 +14,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <li>Services</li>
     <li class="active">Portage de Repas</li>
   </ol>
+  
+  <section class="row">
+    <div class="col-xs-offset-6">
+          <a href="<?php echo site_url('personnel'); ?>" class="btn btn-default btn-lg pull-right"><i class="fa fa-file" aria-hidden="true"></i> Formulaires d'aides financières</a>
+    </div>
+  </section>
 
   <section class="row">
     <div class="col-xs-12">
+      
       <h2 class="titre5" >Portage de Repas</h2>
       <h5>De quoi s'agit-il ?</h5>
       <p>
