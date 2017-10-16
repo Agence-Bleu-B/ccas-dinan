@@ -18,7 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   </ol>
 
   <section class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 listetxt">
 			<h3>
 				Action Sociale
 			</h3>
@@ -46,7 +46,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						}
 
 					</script>
-						<a href="#" onclick='afficherCacher("texte1");return false'><h4 class="page-header">1. LES PUBLICS AIDES</h4></a>
+						<a href="#" onclick='afficherCacher("texte1");return false'><h4 class="page-header titre1">1. LES PUBLICS AIDES</h4></a>
 						<div id="texte1" style="display:none;">
 							<p>
 								Le CCAS reçoit une grande diversité de publics avec des problématiques et des besoins parfois très différents. Si vous habitez DINAN et que vous éprouvez des difficultés matérielles, sociales ou financières, nous pouvons vous aider.  
@@ -64,7 +64,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</div>
 						
 
-						<a href="#" onclick='afficherCacher("texte2");return false'><h4 class="page-header">2. LES REVENUS DE SOLIDARITE LE SOUTIEN A L’AUTONOMIE FINANCIERE</h4></a>
+						<a href="#" onclick='afficherCacher("texte2");return false'><h4 class="page-header titre2">2. LES REVENUS DE SOLIDARITE LE SOUTIEN A L’AUTONOMIE FINANCIERE</h4></a>
 							<div id="texte2" style="display:none;">
 								
 								<h5>Le Revenu de Solidarité Active (R.S.A.)</h5>
@@ -168,7 +168,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									</ul>
 							</div>
 									 
-						<a href="#" onclick='afficherCacher("texte3");return false'><h4 class="page-header">3. L’AIDE SOCIALE LEGALE</h4></a>
+						<a href="#" onclick='afficherCacher("texte3");return false'><h4  class="page-header titre3">3. L’AIDE SOCIALE LEGALE</h4></a>
 							<div id="texte3" style="display:none;">
 								<h5>De quoi s'agit-il ?</h5>
 								<p>
@@ -230,7 +230,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</p>
 							</div>
 
-						<a href="#" onclick='afficherCacher("texte4");return false'><h4 class="page-header">4. L’AIDE SOCIALE FACULTATIVE</h4></a>
+						<a href="#" onclick='afficherCacher("texte4");return false'><h4 class="page-header titre4">4. L’AIDE SOCIALE FACULTATIVE</h4></a>
 							<div id="texte4" style="display:none;">
 								<h5>De quoi s'agit-il ?</h5>
 								
@@ -286,7 +286,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</p>
 							</div>
 
-					<a href="#" onclick='afficherCacher("texte5");return false'><h4 class="page-header">5. LES FRAIS DE SANTE</h4></a>
+					<a href="#" onclick='afficherCacher("texte5");return false'><h4 class="page-header titre5">5. LES FRAIS DE SANTE</h4></a>
 					<div id="texte5" style="display:none;">
 						<h5>L’aide médicale d’Etat</h5>
 						<p>
@@ -368,7 +368,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</p>
 					</div>
 
-				<a href="#" onclick='afficherCacher("texte6");return false'><h4 class="page-header">6. L’ACCES AU LOGEMENT ET LE MAINTIEN A DOMICILE</h4></a>
+				<a href="#" onclick='afficherCacher("texte6");return false'><h4 class="page-header titre6">6. L’ACCES AU LOGEMENT ET LE MAINTIEN A DOMICILE</h4></a>
 					<div id="texte6" style="display:none;">
 						<h5>Le Fond Solidarité Logement (FSL)</h5>
 						<p>
@@ -424,7 +424,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</p>
 					</div>
 
-				<a href="#" onclick='afficherCacher("texte7");return false'><h4 class="page-header">7. LES PARTENAIRES DU SERVICE SOCIAL</h4></a>
+				<a href="#" onclick='afficherCacher("texte7");return false'><h4 class="page-header titre7">7. LES PARTENAIRES DU SERVICE SOCIAL</h4></a>
 					<div id="texte7" style="display:none;">
 						<h5>Pour un besoin alimentaire</h5>
 						<p>

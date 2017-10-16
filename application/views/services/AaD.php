@@ -16,7 +16,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   </ol>
 
   <section class="row">
-    <div class="col-xs-12">
+    <div class="col-xs-12 listetxt">
       <h2>Aide à Domicile</h2>
       <!-- script de déroulement des textes-->
 					<script type="text/javascript">
@@ -34,7 +34,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 					</script>
 
-     	<a href="#" onclick='afficherCacher("texte1");return false'><h4 class="page-header">1. Le Service d’Aide et d’Accompagnement à Domicile – Service Prestataire</h4></a> 
+     	<a href="#" onclick='afficherCacher("texte1");return false'><h4 class="page-header titre1">1. Le Service d’Aide et d’Accompagnement à Domicile – Service Prestataire</h4></a> 
      	<div id="texte1" style="display:none;">
 	     	<h5>Une aide à domicile du services perstataire, qu'est-ce que c'est ?</h5>
 	     	<p>
@@ -92,7 +92,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	     	<a href="#">Livret accueil</a>
 	     </div>
 
-     	<a href="#" onclick='afficherCacher("texte2");return false'><h4 class="page-header">2. Aides à domicile - Service Mandataire, Aide à la Fonction employeur </h4></a>
+     	<a href="#" onclick='afficherCacher("texte2");return false'><h4 class="page-header titre2">2. Aides à domicile - Service Mandataire, Aide à la Fonction employeur </h4></a>
      	<div id="texte2" style="display:none;">
 	     	<h5>Une aide a domicile du services mandataires, qu'est-ce que c'est ?</h5>
 	     	<p>

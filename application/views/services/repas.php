@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
   <section class="row">
     <div class="col-xs-12">
-      <h2>Portage de Repas</h2>
+      <h2 class="titre5" >Portage de Repas</h2>
       <h5>De quoi s'agit-il ?</h5>
       <p>
         Vous éprouvez des difficultés pour préparer vos repas, gérer les courses, faire la vaisselle, veiller à la diversité ou à l’équilibre alimentaire. Nos services peuvent vous livrer tous les jours (sauf le dimanche) entre 11h30 et 13h00 un repas chaud et complet, prêt à consommer.

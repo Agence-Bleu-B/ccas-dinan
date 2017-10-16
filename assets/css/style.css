@@ -12,7 +12,6 @@ header{
   background-size: cover;
 }
 
-rien{}
 header h1 img{
   max-width: 250px;
 }
@@ -316,7 +315,7 @@ li {
 }
 
 .check_cond li
-{
+{ 
   list-style-type: circle;
 }
 
@@ -332,7 +331,71 @@ li {
   font-style: oblique;
 }
 
+.listetxt a
+{
+  text-decoration: none;
+  margin-bottom: 20px;
 
+}
+
+.listetxt a:hover
+{
+  text-decoration: none;
+  opacity: 0.7;
+  
+}
+
+
+.titre1,.titre6
+{
+  background-color: #ca2827;
+  padding:10px;
+  border-radius:10px;
+  color: white;
+  box-shadow: 5px 5px 10px 0px black;
+}
+
+.titre2,.titre7
+{
+  background-color: #3687c7;
+  padding:10px;
+  border-radius:10px;
+  color: white;
+  box-shadow: 5px 5px 10px 0px black;
+}
+
+.titre3
+{
+  background-color: #f5bd3e;
+  padding:10px;
+  border-radius:10px;
+  color: white;
+  box-shadow: 5px 5px 10px 0px black;
+}
+
+.titre4
+{
+   background-color: #68a226;
+  padding:10px;
+  border-radius:10px;
+  color: white;
+  box-shadow: 5px 5px 10px 0px black;
+}
+
+.titre5
+{
+   background-color: #995d92;
+  padding:10px;
+  border-radius:10px;
+  color: white;
+  box-shadow: 5px 5px 10px 0px black;
+}
+
+.listetxt .page-header
+{
+  border-bottom: 0 ;
+
+}
 
 
 

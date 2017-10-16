@@ -16,7 +16,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   </ol>
 
   <section class="row">
-    <div class="col-xs-12">
+    <div class="col-xs-12 listetxt">
     <!-- script de déroulement des textes-->
           <script type="text/javascript">
             function afficherCacher(txt) {
@@ -33,7 +33,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
           </script>
       <h2>EHPAD</h2>
-      <a href="#" onclick='afficherCacher("texte1");return false'><h4 class="page-header">UN ETABLISSEMENT POUR PERSONNES AGEES DEPENDANTES (EHPAD)</h4></a>
+      <a href="#" onclick='afficherCacher("texte1");return false'><h4 class="page-header titre1">UN ETABLISSEMENT POUR PERSONNES AGEES DEPENDANTES (EHPAD)</h4></a>
       <div id="texte1" style="display:none;">
         <h5>Qu'est-ce que c'est ?</h5>
         <p>
@@ -47,7 +47,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </div>
 
 
-      <a href="#" onclick='afficherCacher("texte2");return false'><h4 class="page-header">LA SPECIFICITE DE L’EHPAD GERE PAR LE CCAS DE DINAN</h4></a>
+      <a href="#" onclick='afficherCacher("texte2");return false'><h4 class="page-header titre2">LA SPECIFICITE DE L’EHPAD GERE PAR LE CCAS DE DINAN</h4></a>
       <div id="texte2" style="display:none;">
         <h5><u>la résidence Yves Blanchot</u></h5>
         <p>

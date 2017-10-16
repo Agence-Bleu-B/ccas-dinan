@@ -17,8 +17,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
   <section class="row">
     <div class="col-xs-12">
-      <h2>Centre d'Hébergement d'Urgence - Abri de nuit</h2>
-      <h5>De quoi s'agit-il ?</h5>  
+      <h2 class="titre4">Centre d'Hébergement d'Urgence - Abri de nuit</h2>
+      <h5 >De quoi s'agit-il ?</h5>  
       <p>
         Le CCAS de DINAN gère sur la ville un centre d’hébergement d’urgence de 10 places (5 places destinées aux femmes et 5 places destinées aux hommes) offrant des services de premières nécessités : couchage, couvert, lieux d’hygiène.
       </p>
