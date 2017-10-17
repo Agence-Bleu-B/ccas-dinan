@@ -18,84 +18,55 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="col-xs-12">
     
       <h2>Tous nos formulaires sont disponible ci-dessous:</h2>
-    
-     <div class="col-md-3">
-   
-       <div id="logement">
-   
-       	<div class="ruban">
-   
-       		<h4 class="logement">Aide aux logement</h4>
-           
-              <ul id="lienpdf">
-               <li><a href="#" class="pdf1l">PDF1l</a></li>
-               <li><a href="#" class="pdf2l">PDF2l</a></li>
-             </ul>
-   
-        </div>
-   
-         <div class="ruban_gauche"></div>
-   
-       </div>
-      </div>
-   
-      <div class="col-md-3">
-    
-       <div id="embauche" >
-     
-         <div class="ruban">
-    
-            <h4 class="Embauche">Aide à L'Embauche</h4>
-           
-            <ul id="lienpdf">
-              <li><a href="#" class="pdf1e">PDF1e</a></li>
-              <li><a href="#" class="pdf2e">PDF2e</a></li>
-            </ul>
-        
-        </div>
-    
-        <div class="ruban_gauche"></div>
-    
-        </div>
-      </div>
       
-      <div class="col-md-3">
-      
-       <div id="apprentissage">
-        <div class="ruban">
-       
-            <h4 calss="apprentissage">Aide à L'Apprentissage</h4>
-          
-            <ul id="lienpdf">
-              <li><a href="#" class="pdf1a">PDF1a</a></li>
-              <li><a href="#" class="pdf2a">PDF2a</a></li>
-            </ul>
-        
-        </div>
 
-        <div class="ruban_gauche"></div>
-      
-        </div>
+      <div class="col-md-12 listetxt">
+      <a href="<?php  echo site_url('services/action_sociales')?>"><h4 class="page-header titre1">Action Social</h4></a>
+        <ul id="lienpdf">
+            <li><a href="#" class="pdf1l">PDF1l</a></li>
+            <li><a href="#" class="pdf2l">PDF2l</a></li>
+            <li><a href="#" class="pdf2l">PDF3l</a></li>
+            <li><a href="#" class="pdf2l">PDF4l</a></li>
+         </ul>
+     
+      <a href="<?php  echo site_url('services/aides_a_domicile')?>"><h4 class="page-header titre2">Aide à Domicile</h4></a>
+
+      <ul id="lienpdf">
+            <li><a href="#" class="pdf1l">PDF1l</a></li>
+            <li><a href="#" class="pdf2l">PDF2l</a></li>
+            <li><a href="#" class="pdf2l">PDF3l</a></li>
+            <li><a href="#" class="pdf2l">PDF4l</a></li>
+            <li><a href="#" class="pdf2l">PDF4l</a></li>
+         </ul>
+      <a href="<?php  echo site_url('services/ehpad')?>"><h4 class="page-header titre3">EHPAD</h4></a>
+
+      <ul id="lienpdf">
+            <li><a href="#" class="pdf1l">PDF1l</a></li>
+            <li><a href="#" class="pdf2l">PDF2l</a></li>
+            <li><a href="#" class="pdf2l">PDF3l</a></li>
+            <li><a href="#" class="pdf2l">PDF4l</a></li>
+         </ul>
+      <a href="<?php  echo site_url('services/hebergement_durgence')?>"><h4 class="page-header titre4">Hébergement d'Urgence</h4></a>
+
+      <ul id="lienpdf">
+            <li><a href="#" class="pdf1l">PDF1l</a></li>
+            <li><a href="#" class="pdf2l">PDF2l</a></li>
+            <li><a href="#" class="pdf2l">PDF3l</a></li>
+            <li><a href="#" class="pdf2l">PDF4l</a></li>
+            <li><a href="#" class="pdf2l">PDF4l</a></li>
+         </ul>
+      <a href="<?php  echo site_url('services/portage_de_repas')?>"><h4 class="page-header titre5">Portage de repas</h4></a>
+         <ul id="lienpdf">
+            <li><a href="#" class="pdf1l">PDF1l</a></li>
+            <li><a href="#" class="pdf2l">PDF2l</a></li>
+            <li><a href="#" class="pdf2l">PDF3l</a></li>
+            <li><a href="#" class="pdf2l">PDF4l</a></li>
+            <li><a href="#" class="pdf2l">PDF4l</a></li>
+         </ul>
+
       </div>
-      
-      <div class="col-md-3">
-       
-       <div id="mobilité">
-        <div class="ruban">
-        
-            <h4 class="mobilité">Aide à la Mobilité</h4>
-        
-            <ul id="lienpdf">
-              <li><a href="#" class="pdf1m">PDF1m</a></li>
-              <li><a href="#" class="pdf2m">PDF2m</a></li>
-            </ul>
-         
-        </div>
-        
-        <div class="ruban_gauche"></div>
-      
-      </div>
-     </div>
+
+
     </div>
   </section>
 

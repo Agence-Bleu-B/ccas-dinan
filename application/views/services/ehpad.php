@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
   <section class="row">
     <div class="col-xs-12 listetxt">
-    <a href="<?php echo site_url('personnel'); ?>" class="btn btn-default btn-lg pull-right"><i class="fa fa-file" aria-hidden="true"></i> Formulaires d'aides financières</a>
+    <a href="<?php echo site_url('personnel'); ?>" class="btn btn-default btn-lg pull-right"><i class="fa fa-file" aria-hidden="true"></i> Documents à télécharger</a>
     <!-- script de déroulement des textes-->
           <script type="text/javascript">
             function afficherCacher(txt) {
