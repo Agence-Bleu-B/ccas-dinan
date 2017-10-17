@@ -77,24 +77,38 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
  <section class="row">
 
-    <div class="col-xs-12 col-md-4 col-md-push-8">
-      <div class="news">
-        <h2>En ce moment...</h2>
-        <ul>
-          <?php
-          $nb_news = count($news_liste); //limite de 5 news
-          if ($nb_news > 5) {
-            $nb_news = 5;
+    <div class="col-xs-12 col-md-4 col-md-push-8"  >
+      <h4>En ce moment : </h4>
+      <?php
+          $nb_news = count($news_liste); //limite de 2 news
+          if ($nb_news > 2) {
+            $nb_news = 2;
           }
-           ?>
-          <?php for($i=0; $i<$nb_news; $i++): ?>
-            <li><?php echo $news_liste[$i]['date']; ?> : <a href="<?php echo site_url('accueil/actualite/' . $news_liste[$i]['id'] . '-' . str_replace(' ', '-', $news_liste[$i]['titre'])) ?>"><?php echo $news_liste[$i]['titre']; ?></a></li>
-          <?php endfor; ?>
-        </ul>
-        <p><a href="<?php echo site_url('accueil/actualites'); ?>">Voir toutes les actualités</a></p>
-      </div>
+          for($i=0; $i<$nb_news; $i++){?>
+            
+             <div class="media">
+
+              <div class="media-left media-middle" >
+                <a href="#"> <img class="media-object" style="width:64px;height:64px;" src="<?php echo img_url($news_liste[$i]['couverture']) ?>" alt="..."></a>
+              </div>
+
+              <div class="media-body">
+                <h4 class="media-heading"><a href="<?php echo site_url('accueil/actualite/' . $news_liste[$i]['id'] . '-' . str_replace(' ', '-', $news_liste[$i]['titre'])) ?>"><?php echo $news_liste[$i]['titre'] ?></a> </h4>
+                <i class="fa fa-calendar" aria-hidden="true"></i><?php echo " ".$news_liste[$i]['date']; ?> 
+              </div>
+            </div>
+
+
+          <?php }?>
+
+          <div class="media">
+              <a href="<?php echo site_url('accueil/actualites'); ?>">Voir toutes les actualités...</a>
+          </div>
+        
       <br>
     </div>
+
+
     <div class="col-xs-6 col-md-4 col-md-pull-4 accent accent-1">
       <a href="<?php echo site_url('services/action_sociales'); ?>">
         <img class="img-responsive" src="<?php echo img_url("Capture2.png"); ?>" alt="">
