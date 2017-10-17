@@ -37,7 +37,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
          <div class="item">
           <a href="<?php echo site_url("services/ehpad") ?>"><img src="<?php echo img_url("Capture3-modif") ?>" alt="..."></a>
           <div class="carousel-caption">
-            ehpad
+            EHPAD
           </div>
         </div>
            

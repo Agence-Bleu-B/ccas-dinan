@@ -33,6 +33,7 @@ class Accueil extends CI_Controller {
 	{
 		$this->load->model('news_model');
 		$this->data2['news_liste'] = $this->news_model->get_list(2,0);
+		$this->data2['img']="port-dinan_effet1.png";
 
 		$this->load->view('common/head');
 		$this->load->view('common/header', $this->data);

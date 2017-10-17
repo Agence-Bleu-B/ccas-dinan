@@ -35,20 +35,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="col-md-12">
 				<!-- script de déroulement des textes-->
 					<script type="text/javascript">
-						function afficherCacher(txt) {
+						function afficherCacher(txt,fleche) {
+							
 							var test = document.getElementById(txt).style.display;
 							if (test=="block") 
 							{
 								document.getElementById(txt).style.display = "none";
+								document.getElementById(fleche).classList.replace("fa-caret-up","fa-caret-down");
+
 							}
 							else
 							{
 								document.getElementById(txt).style.display = "block";
+								document.getElementById(fleche).classList.replace("fa-caret-down","fa-caret-up");
 							}
 						}
 
 					</script>
-						<a href="#" onclick='afficherCacher("texte1");return false'><h4 class="page-header titre1">1. LES PUBLICS AIDES</h4></a>
+						<a href="#" onclick='afficherCacher("texte1","fleche1");return false'><h4 class="page-header titre1">1. LES PUBLICS AIDES <i id="fleche1" class="fa fa-caret-down" aria-hidden="true"></i></h4></a>
 						<div id="texte1" style="display:none;">
 							<p>
 								Le CCAS reçoit une grande diversité de publics avec des problématiques et des besoins parfois très différents. Si vous habitez DINAN et que vous éprouvez des difficultés matérielles, sociales ou financières, nous pouvons vous aider.  
@@ -66,7 +70,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</div>
 						
 
-						<a href="#" onclick='afficherCacher("texte2");return false'><h4 class="page-header titre2">2. LES REVENUS DE SOLIDARITE LE SOUTIEN A L’AUTONOMIE FINANCIERE</h4></a>
+						<a href="#" onclick='afficherCacher("texte2","fleche2");return false'><h4 class="page-header titre2">2. LES REVENUS DE SOLIDARITE LE SOUTIEN A L’AUTONOMIE FINANCIERE <i id="fleche2" class="fa fa-caret-down" aria-hidden="true"></i></h4></a>
 							<div id="texte2" style="display:none;">
 								
 								<h5>Le Revenu de Solidarité Active (R.S.A.)</h5>
@@ -170,7 +174,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									</ul>
 							</div>
 									 
-						<a href="#" onclick='afficherCacher("texte3");return false'><h4  class="page-header titre3">3. L’AIDE SOCIALE LEGALE</h4></a>
+						<a href="#" onclick='afficherCacher("texte3","fleche3");return false'><h4  class="page-header titre3">3. L’AIDE SOCIALE LEGALE <i id="fleche3" class="fa fa-caret-down" aria-hidden="true"></i></h4></a>
 							<div id="texte3" style="display:none;">
 								<h5>De quoi s'agit-il ?</h5>
 								<p>
@@ -232,7 +236,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</p>
 							</div>
 
-						<a href="#" onclick='afficherCacher("texte4");return false'><h4 class="page-header titre4">4. L’AIDE SOCIALE FACULTATIVE</h4></a>
+						<a href="#" onclick='afficherCacher("texte4","fleche4");return false'><h4 class="page-header titre4">4. L’AIDE SOCIALE FACULTATIVE <i id="fleche4" class="fa fa-caret-down" aria-hidden="true"></i></h4></a>
 							<div id="texte4" style="display:none;">
 								<h5>De quoi s'agit-il ?</h5>
 								
@@ -288,7 +292,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</p>
 							</div>
 
-					<a href="#" onclick='afficherCacher("texte5");return false'><h4 class="page-header titre5">5. LES FRAIS DE SANTE</h4></a>
+					<a href="#" onclick='afficherCacher("texte5","fleche5");return false'><h4 class="page-header titre5">5. LES FRAIS DE SANTE <i id="fleche5" class="fa fa-caret-down" aria-hidden="true"></i></h4></a>
 					<div id="texte5" style="display:none;">
 						<h5>L’aide médicale d’Etat</h5>
 						<p>
@@ -370,7 +374,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</p>
 					</div>
 
-				<a href="#" onclick='afficherCacher("texte6");return false'><h4 class="page-header titre6">6. L’ACCES AU LOGEMENT ET LE MAINTIEN A DOMICILE</h4></a>
+				<a href="#" onclick='afficherCacher("texte6","fleche6");return false'><h4 class="page-header titre6">6. L’ACCES AU LOGEMENT ET LE MAINTIEN A DOMICILE <i id="fleche6" class="fa fa-caret-down" aria-hidden="true"></i></h4></a>
 					<div id="texte6" style="display:none;">
 						<h5>Le Fond Solidarité Logement (FSL)</h5>
 						<p>
@@ -426,7 +430,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</p>
 					</div>
 
-				<a href="#" onclick='afficherCacher("texte7");return false'><h4 class="page-header titre7">7. LES PARTENAIRES DU SERVICE SOCIAL</h4></a>
+				<a href="#" onclick='afficherCacher("texte7","fleche7");return false'><h4 class="page-header titre7">7. LES PARTENAIRES DU SERVICE SOCIAL <i id="fleche7" class="fa fa-caret-down" aria-hidden="true"></i></h4></a>
 					<div id="texte7" style="display:none;">
 						<h5>Pour un besoin alimentaire</h5>
 						<p>

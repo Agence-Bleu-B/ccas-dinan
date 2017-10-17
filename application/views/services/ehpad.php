@@ -20,21 +20,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <a href="<?php echo site_url('personnel'); ?>" class="btn btn-default btn-lg pull-right"><i class="fa fa-file" aria-hidden="true"></i> Documents à télécharger</a>
     <!-- script de déroulement des textes-->
           <script type="text/javascript">
-            function afficherCacher(txt) {
+            function afficherCacher(txt,fleche) {
+              
               var test = document.getElementById(txt).style.display;
               if (test=="block") 
               {
                 document.getElementById(txt).style.display = "none";
+                document.getElementById(fleche).classList.replace("fa-caret-up","fa-caret-down");
+
               }
               else
               {
                 document.getElementById(txt).style.display = "block";
+                document.getElementById(fleche).classList.replace("fa-caret-down","fa-caret-up");
               }
             }
 
           </script>
       <h2>EHPAD</h2>
-      <a href="#" onclick='afficherCacher("texte1");return false'><h4 class="page-header titre1">UN ETABLISSEMENT POUR PERSONNES AGEES DEPENDANTES (EHPAD)</h4></a>
+      <a href="#" onclick='afficherCacher("texte1","fleche10");return false'><h4 class="page-header titre3">UN ETABLISSEMENT POUR PERSONNES AGEES DEPENDANTES (EHPAD) <i id="fleche10" class="fa fa-caret-down" aria-hidden="true"></i></h4></a>
       <div id="texte1" style="display:none;">
         <h5>Qu'est-ce que c'est ?</h5>
         <p>
@@ -48,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </div>
 
 
-      <a href="#" onclick='afficherCacher("texte2");return false'><h4 class="page-header titre2">LA SPECIFICITE DE L’EHPAD GERE PAR LE CCAS DE DINAN</h4></a>
+      <a href="#" onclick='afficherCacher("texte2","fleche11");return false'><h4 class="page-header titre4">LA SPECIFICITE DE L’EHPAD GERE PAR LE CCAS DE DINAN <i id="fleche11" class="fa fa-caret-down" aria-hidden="true"></i></h4></a>
       <div id="texte2" style="display:none;">
         <h5><u>la résidence Yves Blanchot</u></h5>
         <p>
