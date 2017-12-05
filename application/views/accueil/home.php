@@ -21,28 +21,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <div class="carousel-inner" role="listbox">
 
         <div class="item active">
-          <a href="<?php echo site_url("services/action_sociales") ?>"><img src="<?php echo img_url("Capture2-modif") ?>" alt="..."></a>
+          <a href="<?php echo site_url("services/action_sociales") ?>"><img src="<?php echo img_url("slider-solidarite-action-sociale") ?>" alt="..."></a>
           <div class="carousel-caption">
             Action Social
           </div>
         </div>
 
         <div class="item">
-          <a href="<?php echo site_url("services/aides_a_domicile") ?>"><img src="<?php echo img_url("Capture1-modif") ?>" alt="..."></a>
+          <a href="<?php echo site_url("services/aides_a_domicile") ?>"><img src="<?php echo img_url("slider-aides-a-domicile") ?>" alt="..."></a>
           <div class="carousel-caption">
             Aides à domicile
           </div>
         </div>
         
          <div class="item">
-          <a href="<?php echo site_url("services/ehpad") ?>"><img src="<?php echo img_url("Capture3-modif") ?>" alt="..."></a>
+          <a href="<?php echo site_url("services/ehpad") ?>"><img src="<?php echo img_url("slider-EHPAD-maison-de-retraite") ?>" alt="..."></a>
           <div class="carousel-caption">
             EHPAD
           </div>
         </div>
            
           <div class="item">
-          <a href="<?php echo site_url("services/hebergement_durgence") ?>"><img src="<?php echo img_url("Capture5-modif") ?>" alt="..."></a>
+          <a href="<?php echo site_url("services/hebergement_durgence") ?>"><img src="<?php echo img_url("slider-hebergement-urgence") ?>" alt="..."></a>
           <div class="carousel-caption">
             Hébergement d'Urgence
           </div>
@@ -50,7 +50,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
           <div class="item">
-          <a href="<?php echo site_url("services/portage_de_repas") ?>"><img src="<?php echo img_url("Capture4-modif") ?>" alt="..."></a>
+          <a href="<?php echo site_url("services/portage_de_repas") ?>"><img src="<?php echo img_url("slider-portage-repas") ?>" alt="..."></a>
           <div class="carousel-caption">
             Portage de repas
           </div>
@@ -111,13 +111,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     <div class="col-xs-6 col-md-4 col-md-pull-4 accent accent-1">
       <a href="<?php echo site_url('services/action_sociales'); ?>">
-        <img class="img-responsive" src="<?php echo img_url("Capture2.png"); ?>" alt="">
+        <img class="img-responsive" src="<?php echo img_url("raccourcis-slider-solidarite-action-sociale.png"); ?>" alt="">
         <h2>Action Sociale</h2>
       </a>
     </div>
     <div class="col-xs-6 col-md-4 col-md-pull-4 accent accent-2">
       <a href="<?php echo site_url('services/aides_a_domicile'); ?>">
-        <img class="img-responsive" src="<?php echo img_url("Capture1.png"); ?>" alt="">
+        <img class="img-responsive" src="<?php echo img_url("raccourcis-service-aide-a-domicile.png"); ?>" alt="">
         <h2>Aide à Domicile</h2>
       </a>
     </div>
@@ -127,13 +127,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     <div class="col-xs-6 col-md-4 accent accent-3">
       <a href="<?php echo site_url('services/ehpad'); ?>">
-        <img class="img-responsive" src="<?php echo img_url("Capture3.png"); ?>" alt="">
+        <img class="img-responsive" src="<?php echo img_url("raccourcis-EHPAD-residence-blanchot.png"); ?>" alt="">
         <h2>EHPAD</h2>
       </a>
     </div>
     <div class="col-xs-6 col-md-4 accent accent-4">
       <a href="<?php echo site_url('services/hebergement_durgence'); ?>">
-        <img class="img-responsive" src="<?php echo img_url("Capture5"); ?>" alt="">
+        <img class="img-responsive" src="<?php echo img_url("raccourcis-hebergement-urgence"); ?>" alt="">
         <h2>Hebergement <br>D'Urgence</h2>
       </a>
     </div>
@@ -142,7 +142,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
     <div class="col-xs-6 col-md-4 accent accent-5">
       <a href="<?php echo site_url('services/portage_de_repas'); ?>">
-        <img class="img-responsive" src="<?php echo img_url("Capture4.png"); ?>" alt="">
+        <img class="img-responsive" src="<?php echo img_url("raccourcis-portage-repas.png"); ?>" alt="">
         <h2>Portage de Repas</h2>
       </a>
     </div>
