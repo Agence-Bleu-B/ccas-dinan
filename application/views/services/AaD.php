@@ -18,7 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <section class="row">
     <div class="col-xs-12 listetxt">
     	
-  		 <a href="<?php echo site_url('personnel'); ?>" class="btn btn-default btn-lg pull-right"><i class="fa fa-file" aria-hidden="true"></i> Documents à télécharger</a>
+  		 <a href="<?php echo site_url('accueil/doc'); ?>" class="btn btn-default btn-lg pull-right"><i class="fa fa-file" aria-hidden="true"></i> Documents à télécharger</a>
       <h2>Aide à Domicile</h2>
       <!-- script de déroulement des textes-->
 					<script type="text/javascript">
@@ -40,7 +40,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 					</script>
 
-     	<a href="#" onclick='afficherCacher("texte1","fleche8");return false'><h4 class="page-header titre1">1. Le Service d’Aide et d’Accompagnement à Domicile – Service Prestataire <i id="fleche8" class="fa fa-caret-down" aria-hidden="true"></i></h4></a> 
+     	<a href="#" onclick='afficherCacher("texte1","fleche8");return false'><h4 class="page-header titre2">1. Le Service d’Aide et d’Accompagnement à Domicile – Service Prestataire <i id="fleche8" class="fa fa-caret-down" aria-hidden="true"></i></h4></a> 
      	<div id="texte1" style="display:none;">
 	     	<h5>Une aide à domicile du services perstataire, qu'est-ce que c'est ?</h5>
 	     	<p>

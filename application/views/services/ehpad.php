@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
   <section class="row">
     <div class="col-xs-12 listetxt">
-    <a href="<?php echo site_url('personnel'); ?>" class="btn btn-default btn-lg pull-right"><i class="fa fa-file" aria-hidden="true"></i> Documents à télécharger</a>
+    <a href="<?php echo site_url('accueil/doc'); ?>" class="btn btn-default btn-lg pull-right"><i class="fa fa-file" aria-hidden="true"></i> Documents à télécharger</a>
     <!-- script de déroulement des textes-->
           <script type="text/javascript">
             function afficherCacher(txt,fleche) {
@@ -52,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </div>
 
 
-      <a href="#" onclick='afficherCacher("texte2","fleche11");return false'><h4 class="page-header titre4">LA SPECIFICITE DE L’EHPAD GERE PAR LE CCAS DE DINAN <i id="fleche11" class="fa fa-caret-down" aria-hidden="true"></i></h4></a>
+      <a href="#" onclick='afficherCacher("texte2","fleche11");return false'><h4 class="page-header titre3">LA SPECIFICITE DE L’EHPAD GERE PAR LE CCAS DE DINAN <i id="fleche11" class="fa fa-caret-down" aria-hidden="true"></i></h4></a>
       <div id="texte2" style="display:none;">
         <h5><u>la résidence Yves Blanchot</u></h5>
         <p>

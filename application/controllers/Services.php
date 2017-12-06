@@ -23,7 +23,7 @@ class Services extends CI_Controller {
 
 	public function action_sociales()
 	{
-		$this->data2['img']="Capture2-modif.png";
+		$this->data2['img']="slider-solidarite-action-sociale";
 		$this->load->view('common/head');
 		$this->load->view('common/header', $this->data);
 		$this->load->view('common/sliderMenu',$this->data2);
@@ -33,7 +33,7 @@ class Services extends CI_Controller {
 
 	public function aides_a_domicile()
 	{
-		$this->data2['img']="Capture1-modif.png";
+		$this->data2['img']="slider-aides-a-domicile";
 		$this->load->view('common/head');
 		$this->load->view('common/header', $this->data);
 		$this->load->view('common/sliderMenu',$this->data2);
@@ -42,7 +42,7 @@ class Services extends CI_Controller {
 	}
 	public function ehpad()
 	{
-		$this->data2['img']="Capture3-modif.png";
+		$this->data2['img']="slider-EHPAD-maison-de-retraite";
 		$this->load->view('common/head');
 		$this->load->view('common/header', $this->data);
 		$this->load->view('common/sliderMenu',$this->data2);
@@ -51,7 +51,7 @@ class Services extends CI_Controller {
 	}
 	public function hebergement_durgence()
 	{
-		$this->data2['img']="Capture5-modif.png";
+		$this->data2['img']="slider-hebergement-urgence";
 		$this->load->view('common/head');
 		$this->load->view('common/header', $this->data);
 		$this->load->view('common/sliderMenu',$this->data2);
@@ -60,7 +60,7 @@ class Services extends CI_Controller {
 	}
 	public function portage_de_repas()
 	{
-		$this->data2['img']="Capture4-modif.png";
+		$this->data2['img']="slider-portage-repas";
 		$this->load->view('common/head');
 		$this->load->view('common/header', $this->data);
 		$this->load->view('common/sliderMenu',$this->data2);

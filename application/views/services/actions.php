@@ -20,7 +20,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <section class="row">
 
     <div class="col-md-12 listetxt">
-    		<a href="<?php echo site_url('personnel'); ?>" class="btn btn-default btn-lg pull-right"><i class="fa fa-file" aria-hidden="true"></i> Documents à télécharger</a>
+    		<a href="<?php echo site_url('accueil/doc'); ?>" class="btn btn-default btn-lg pull-right"><i class="fa fa-file" aria-hidden="true"></i> Documents à télécharger</a>
 			<h3>
 				Action Sociale
 			</h3>
@@ -52,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						}
 
 					</script>
-						<a href="#" onclick='afficherCacher("texte1","fleche1");return false'><h4 class="page-header titre1">1. LES PUBLICS AIDES <i id="fleche1" class="fa fa-caret-down" aria-hidden="true"></i></h4></a>
+						<a href="#" onclick='afficherCacher("texte1","fleche1");return false'><h4 class="page-header titre1">1. LES AIDES PUBLIQUES <i id="fleche1" class="fa fa-caret-down" aria-hidden="true"></i></h4></a>
 						<div id="texte1" style="display:none;">
 							<p>
 								Le CCAS reçoit une grande diversité de publics avec des problématiques et des besoins parfois très différents. Si vous habitez DINAN et que vous éprouvez des difficultés matérielles, sociales ou financières, nous pouvons vous aider.  
@@ -70,7 +70,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</div>
 						
 
-						<a href="#" onclick='afficherCacher("texte2","fleche2");return false'><h4 class="page-header titre2">2. LES REVENUS DE SOLIDARITE LE SOUTIEN A L’AUTONOMIE FINANCIERE <i id="fleche2" class="fa fa-caret-down" aria-hidden="true"></i></h4></a>
+						<a href="#" onclick='afficherCacher("texte2","fleche2");return false'><h4 class="page-header titre1">2. LES REVENUS DE SOLIDARITE LE SOUTIEN A L’AUTONOMIE FINANCIERE <i id="fleche2" class="fa fa-caret-down" aria-hidden="true"></i></h4></a>
 							<div id="texte2" style="display:none;">
 								
 								<h5>Le Revenu de Solidarité Active (R.S.A.)</h5>
@@ -174,7 +174,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									</ul>
 							</div>
 									 
-						<a href="#" onclick='afficherCacher("texte3","fleche3");return false'><h4  class="page-header titre3">3. L’AIDE SOCIALE LEGALE <i id="fleche3" class="fa fa-caret-down" aria-hidden="true"></i></h4></a>
+						<a href="#" onclick='afficherCacher("texte3","fleche3");return false'><h4  class="page-header titre1">3. L’AIDE SOCIALE LEGALE <i id="fleche3" class="fa fa-caret-down" aria-hidden="true"></i></h4></a>
 							<div id="texte3" style="display:none;">
 								<h5>De quoi s'agit-il ?</h5>
 								<p>
@@ -236,7 +236,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</p>
 							</div>
 
-						<a href="#" onclick='afficherCacher("texte4","fleche4");return false'><h4 class="page-header titre4">4. L’AIDE SOCIALE FACULTATIVE <i id="fleche4" class="fa fa-caret-down" aria-hidden="true"></i></h4></a>
+						<a href="#" onclick='afficherCacher("texte4","fleche4");return false'><h4 class="page-header titre1">4. L’AIDE SOCIALE FACULTATIVE <i id="fleche4" class="fa fa-caret-down" aria-hidden="true"></i></h4></a>
 							<div id="texte4" style="display:none;">
 								<h5>De quoi s'agit-il ?</h5>
 								
@@ -292,7 +292,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</p>
 							</div>
 
-					<a href="#" onclick='afficherCacher("texte5","fleche5");return false'><h4 class="page-header titre5">5. LES FRAIS DE SANTE <i id="fleche5" class="fa fa-caret-down" aria-hidden="true"></i></h4></a>
+					<a href="#" onclick='afficherCacher("texte5","fleche5");return false'><h4 class="page-header titre1">5. LES FRAIS DE SANTE <i id="fleche5" class="fa fa-caret-down" aria-hidden="true"></i></h4></a>
 					<div id="texte5" style="display:none;">
 						<h5>L’aide médicale d’Etat</h5>
 						<p>
@@ -374,7 +374,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</p>
 					</div>
 
-				<a href="#" onclick='afficherCacher("texte6","fleche6");return false'><h4 class="page-header titre6">6. L’ACCES AU LOGEMENT ET LE MAINTIEN A DOMICILE <i id="fleche6" class="fa fa-caret-down" aria-hidden="true"></i></h4></a>
+				<a href="#" onclick='afficherCacher("texte6","fleche6");return false'><h4 class="page-header titre1">6. L’ACCES AU LOGEMENT ET LE MAINTIEN A DOMICILE <i id="fleche6" class="fa fa-caret-down" aria-hidden="true"></i></h4></a>
 					<div id="texte6" style="display:none;">
 						<h5>Le Fond Solidarité Logement (FSL)</h5>
 						<p>
@@ -430,7 +430,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</p>
 					</div>
 
-				<a href="#" onclick='afficherCacher("texte7","fleche7");return false'><h4 class="page-header titre7">7. LES PARTENAIRES DU SERVICE SOCIAL <i id="fleche7" class="fa fa-caret-down" aria-hidden="true"></i></h4></a>
+				<a href="#" onclick='afficherCacher("texte7","fleche7");return false'><h4 class="page-header titre1">7. LES PARTENAIRES DU SERVICE SOCIAL <i id="fleche7" class="fa fa-caret-down" aria-hidden="true"></i></h4></a>
 					<div id="texte7" style="display:none;">
 						<h5>Pour un besoin alimentaire</h5>
 						<p>
@@ -615,40 +615,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<li>Permanence à l’Atelier du 5 bis, Rue Gambetta - DINAN</li>
 						</ul>
 					</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 				</div>
 			</div>
-			<div class="row">
+			<div class="row text-center">
 				<div class="col-md-4">
 					<h4>Horaires</h4>
 					<p>du lundi au jeudi : 8h/12h,14h/18h</p>
 					<p>vendredi : 8h/12h</p>
 					<p>samedi/dimanche : fermé</p>
+				</div>
+				<div class="col-md-4">
 					<h4>Adresse</h4>
 					<p>lorem ipsum</p>
 					<p>22000</p>
 					<p>dinan</p>
+				</div>
+				<div class="col-md-4">
 					<h4>Contacts</h4>
 					<p>02 20 20 20 20</p>
-				</div>
-				<div class="col-md-4">
-					<img class="img-responsive" alt="Bootstrap Image Preview" src="http://lorempixel.com/400/350/" />
-				</div>
-				<div class="col-md-4">
-					<img class="img-responsive" alt="Bootstrap Image Preview" src="http://lorempixel.com/400/350/" />
 				</div>
 			</div>
 		</div>
